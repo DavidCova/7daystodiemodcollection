@@ -1,0 +1,61 @@
+<configs>
+    <!--
+        This is based the existing triggerInfection buff, used for testing, but only tags the infection buff.
+        I am making my own buff (and not using triggerInfection directly) in case TFP remove that buff.
+    -->
+    <insertAfter xpath="/buffs/buff[@name='buffInjuryBleeding']">
+        <buff name="triggerInfectionDirtyBandage" name_key="trigger" icon="ui_game_symbol_quest">
+            <duration value=".1" />
+            <effect_group>
+                <passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="buffInfectionCatch" />
+                <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInfectionCatch" />
+            </effect_group>
+        </buff>
+    </insertAfter>
+
+    <!--
+        Fire bad!
+    -->
+    <insertAfter xpath="/buffs/buff[@name='buffIsOnFire']">
+        <!-- This is what happens when you're on fire and douse yourself with flammable liquids -->
+        <buff name="buffFireBad" name_key="trigger" icon="ui_game_symbol_quest">
+            <duration value="1.5" />
+            <effect_group>
+                <requirement name="HasBuff" buff="buffIsOnFire" />
+                <triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="molotov_explosion" />
+                <triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="player#painlg" />
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14">
+                    <requirement name="HasBuff" buff="buffBurningFlamingArrow" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="buffBurningMolotovDuration" operation="set" value="16">
+                    <requirement name="HasBuff" buff="buffBurningMolotov" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurningEnvironmentDuration" operation="add" value="1">
+                    <requirement name="HasBuff" buff="buffBurningEnvironmentHack" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurningEnvironmentDuration" operation="add" value="1">
+                    <requirement name="HasBuff" buff="buffBurningEnvironment" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffBurningElementDuration" operation="set" value="10">
+                    <requirement name="HasBuff" buff="buffBurningElement" />
+                </triggered_effect>
+            </effect_group>
+        </buff>
+        <!-- Drinking gasoline makes you dizzy and gives you dysentery -->
+        <buff name="buffDrunkGasoline" name_key="trigger" icon="ui_game_symbol_quest">
+            <duration value="3" />
+            <effect_group>
+                <passive_effect name="BuffResistance" operation="base_subtract" value="2" tags="buffDysenteryCatchDrink" />
+                <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffDysenteryCatchDrink" />
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.5" fade="1" effect_name="Blur" />
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur" />
+                <triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="Player$Hungry" play_in_head="true" />
+                <triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_bleeding" play_in_head="true" />
+                <triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_bleeding" play_in_head="true" />
+            </effect_group>
+        </buff>
+    </insertAfter>
+
+    <!-- Concussion effects happen more often - vanilla is 120,600 -->
+    <set xpath="/buffs/buff[@name='buffInjuryConcussion']/effect_group[@name='periodic blur']/triggered_effect[@operation='subtract']/@value">randomint(30,120)</set>
+</configs>

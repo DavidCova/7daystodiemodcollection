@@ -1,0 +1,10 @@
+<mod>
+	<info>
+		<author>Thunder Sn1per</author>
+		<name>Thunder Sn1per's Corpse Remover</name>
+		<description>This mod will force corpses to despawn after much less time.</description>
+		<mod_version>1.0</mod_version>
+		<game_version>20</game_version>
+		<launcher_version>0.7.3</launcher_version>
+	</info>
+</mod>
