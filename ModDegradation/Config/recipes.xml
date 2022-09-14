@@ -1,0 +1,59 @@
+<configs>
+	<set xpath="/recipes/recipe[@name='modMeleeTemperedBlade']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeSerratedBlade']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeWeightedHead']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeStructuralBrace']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeErgonomicGrip']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeFortifyingGrip']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeClubBarbedWire']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeClubMetalSpikes']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeClubMetalChain']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeClubBurningShaft']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeFiremansAxeMod']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeGraveDigger']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeBunkerBuster']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeIronBreaker']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeWoodSplitter']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeDiamondTip']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modMeleeStunBatonRepulsor']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunSoundSuppressorSilencer']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunBarrelExtender']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunMuzzleBrake']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunTriggerGroupSemi']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunTriggerGroupBurst3']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunTriggerGroupAutomatic']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunBipod']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunForegrip']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunRetractingStock']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunDuckbill']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunChoke']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunCrippleEm']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunBowPolymerString']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunBowArrowRest']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunMeleeTheHunter']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunMeleeRadRemover']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunFlashlight']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunLaserSight']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunReflexSight']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunScopeSmall']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunScopeMedium']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunScopeLarge']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunMagazineExtender']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunDrumMagazineExtender']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modGunShotgunTubeExtenderMagazine']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modShotgunSawedOffBarrel']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='meleeToolFlashlight02']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<set xpath="/recipes/recipe[@name='modArmorHelmetLight']/@tags">learnable,workbenchCrafting,tieredMods</set>
+	<append xpath="/recipes/recipe[@name='meleeToolFlashlight02']">
+		<ingredient name="resourceRepairBattery" count="1"/>
+	</append>
+	<append xpath="/recipes/recipe[@name='modGunLaserSight']">
+		<ingredient name="resourceRepairBattery" count="1"/>
+	</append>
+	<append xpath="/recipes/recipe[@name='modArmorHelmetLight']">
+		<ingredient name="resourceRepairBattery" count="1"/>
+	</append>
+	<append xpath="/recipes/recipe[@name='modGunFlashlight']">
+		<ingredient name="resourceRepairBattery" count="1"/>
+	</append>
+</configs>

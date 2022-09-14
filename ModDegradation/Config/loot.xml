@@ -1,0 +1,26 @@
+<configs>
+	<append xpath="/lootcontainers/lootgroup[@name='groupCraftingUncommon']">
+		<item name="resourceRepairBattery" count ="1"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupMoPowerShelves']">
+		<item name="resourceRepairBattery" count="1,3" loot_prob_template="med"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupElectricalDevices']">
+		<item name="resourceRepairBattery" count="1,3" loot_prob_template="med"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox02']">
+		<item name="resourceRepairBattery" count="1" loot_prob_template="med"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupDesks']">
+		<item name="resourceRepairBattery" count="1,2" prob="0.1"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupNightstand01']">
+		<item name="resourceRepairBattery" count="1,2" prob="0.1"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupScrapUncommon']">
+		<item name="resourceRepairBattery" count="1,2" prob="0.1"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot02']">
+		<item name="resourceRepairBattery" count="1,2"/>
+	</append>
+</configs>

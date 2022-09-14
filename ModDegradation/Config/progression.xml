@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="1,2,3,4,5" value="1,2,3,4,4" tags="tieredMods"/>
+		</effect_group>
+	</append>
+</configs>

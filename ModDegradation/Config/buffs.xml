@@ -1,0 +1,49 @@
+<config>
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+		<effect_group>
+			<triggered_effect trigger="onSelfRangedBurstShotStart" action="ChangeModDurability, ModDegradation" tags="modRangedDegradation" value="-1">
+				<requirement name="RoundsInMagazine" operation="GT" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfAttackedOther" action="ChangeModDurability, ModDegradation" tags="modMeleeDegradation" value="-1"/>
+			<triggered_effect trigger="onSelfDamagedBlock" action="ChangeModDurability, ModDegradation" tags="modMeleeDegradation" value="-1"/>
+		</effect_group>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffNightvisionGogglesDegradation" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<requirement name="!EquipmentBroken, ModDegradation" tags="NightvisionGoggles"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ChangeEquipmentDurability, ModDegradation" tags="NightvisionGoggles" value="-1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ChangeEquipmentDurability, ModDegradation" tags="NightvisionGoggles" value="-1"/>
+			</effect_group>
+		</buff>
+		<buff name="buffGunFlashlightDegradation" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<requirement name="!ModBroken, ModDegradation" item="modGunFlashlight"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ChangeModDurability, ModDegradation" item="modGunFlashlight" value="-1"/>
+			</effect_group>
+		</buff>
+		<buff name="buffFlashlightDegradation" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<requirement name="!HoldingItemBroken"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ChangeHoldingItemDurability, ModDegradation" value="-1"/>
+			</effect_group>
+		</buff>
+		<buff name="buffHelmetLightDegradation" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<requirement name="!EquipmentModBroken, ModDegradation" item="modArmorHelmetLight" tags="armorHead"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ChangeEquipmentModDurability, ModDegradation" item="modArmorHelmetLight" tags="armorHead" value="-1"/>
+			</effect_group>
+		</buff>
+		<buff name="buffLaserSightDegradation" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<requirement name="!ModBroken, ModDegradation" item="modGunLaserSight"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ChangeModDurability, ModDegradation" item="modGunLaserSight" value="-1"/>
+			</effect_group>
+		</buff>
+	</append>
+</config>

@@ -1,0 +1,3 @@
+Key,English
+resourceRepairBattery,NiCd Battery
+resourceRepairBatteryDesc,"NiCd Batteries are used to power some electronic devices."
