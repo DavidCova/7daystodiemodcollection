@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MeanCloud's Enemy Reach Shortener"/>
+		<Description value="Reduces enemy's reach to a more reasonable distance."/>
+		<Author value="Mean.Cloud"/>
+		<!-- credit to JaxTeller718's version: this is a copy of his but with an even shorter reach, and fixes to falloff damage, and forward-compatible with new or custom enemies -->
+		<Version value="1.03" compat="A19,A20"/>
+		<Website value="http://mean.cloud/" /> <!-- JaxTeller718's website https://ravenhearst.enjin.com/ -->
+	</ModInfo>
+</xml>

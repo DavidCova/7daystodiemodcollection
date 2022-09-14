@@ -1,0 +1,19 @@
+<configs>
+
+<!-- this will increase the mod slots from 1-4 to 1-6 on tier 1-6 items. -->
+
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots' and(@value='1,1,2,2,3,4')]/@value">1,2,3,4,5,6</set>
+
+<!-- this will increase the vehicle mod slots from 4 to 6.  -->
+
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots' and(@value='2')]/@value">6</set>
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots' and(@value='3')]/@value">6</set>
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots' and(@value='4')]/@value">6</set>
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots' and(@value='5')]/@value">6</set>
+
+<!-- the next 2 lines are here for the Tactical Weapons mod -->
+
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots' and(@value='0,5')]/@value">1,6</set>
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots' and(@value='0,4')]/@value">1,6</set>
+
+</configs>

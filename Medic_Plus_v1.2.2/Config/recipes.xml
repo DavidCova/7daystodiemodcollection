@@ -1,0 +1,59 @@
+<configs>
+
+	<remove	xpath="//recipe[@name='medicalFirstAidBandage']/ingredient"/>
+	<remove	xpath="//recipe[@name='medicalFirstAidKit']/ingredient"/>
+	
+	<append xpath="//recipe[@name='medicalFirstAidBandage']">
+		<ingredient name="medicalSterileBandage" count="1"/>
+		<ingredient name="resourceGauze" count="1"/>
+		<ingredient name="medicalAntibioticOintment" count="1"/>
+		<ingredient name="resourceDuctTape" count="1"/>
+	</append>
+	
+	<append xpath="//recipe[@name='medicalFirstAidKit']">
+		<ingredient name="medicalFirstAidBandage" count="1"/>
+		<ingredient name="medicalBrace" count="2"/>
+		<ingredient name="resourceSutureKit" count="1"/>
+		<ingredient name="medicalAntibioticOintment" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="10"/>
+	</append>
+
+	<append xpath="/recipes">
+	
+		<recipe name="medicalSterileBandage" count="3" craft_area="campfire" craft_tool="toolCookingPot">
+			<ingredient name="resourceCloth" count="6"/>
+			<ingredient name="medicalIsopropylAlcohol" count="1"/>
+		</recipe>
+		
+		<recipe name="medicalBrace" count="1">
+			<ingredient name="resourceCloth" count="2"/>
+			<ingredient name="resourceWood" count="2"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		
+		<recipe name="medicalFirstAidKitSimple" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="medicalSterileBandage" count="1"/>
+			<ingredient name="resourceGauze" count="2"/>
+			<ingredient name="medicalBrace" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		
+		<recipe name="medicalFirstAidKitEMT" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="medicalFirstAidKit" count="1"/>
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="drugHerbalAntibiotics" count="1"/>
+			<ingredient name="medicalSplint" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+		</recipe>
+		
+		<recipe name="medicalFirstAidKitTrauma" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="medicalFirstAidKitEMT" count="1"/>
+			<ingredient name="medicalBloodBag" count="2"/>
+			<ingredient name="drugAntibiotics" count="1"/>
+			<ingredient name="medicalPlasterCast" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+		</recipe>
+	
+	</append>
+
+</configs>

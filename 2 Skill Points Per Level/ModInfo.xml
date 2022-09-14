@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="3 Skill Points Per Level" />
+		<Description value="This simple mod increases the skill points earned per level from 1 to 3" />
+		<Author value="AaronG85, Abasiyanik" />
+		<Version value="1.0" />
+		<Website value="https://7daystodiemods.com/tag/abasiyanik/"/>
+	</ModInfo>
+</xml>

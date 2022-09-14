@@ -1,0 +1,8 @@
+<configs>
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@textcontent)=0][1]/@textcontent">Protein</set>
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@valuecontent)=0][1]/@valuecontent">{cvar(cvarANBProtein)}</set>
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@textcontent)=0][1]/@textcontent">Carbs</set>
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@valuecontent)=0][1]/@valuecontent">{cvar(cvarANBCarbs)}</set>
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@textcontent)=0][1]/@textcontent">Fruits and Veggies</set>
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@valuecontent)=0][1]/@valuecontent">{cvar(cvarANBGreens)}</set>
+</configs>

@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="/recipes" >
+	
+		<recipe name="mcSecureStorageBlockVariantHelper" count="1">
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceWood" count="12"/>
+		</recipe>
+	
+	</append>
+</configs>

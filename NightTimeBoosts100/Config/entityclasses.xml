@@ -1,0 +1,29 @@
+<config>
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+	
+	<effect_group>
+		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffNightExpBoostStart"/>
+		
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffNightExpBoostStart"/>
+	</effect_group>
+
+	<effect_group>
+		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffNightExpBoostEnd"/>
+		
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffNightExpBoostEnd"/>
+	</effect_group>  
+	 
+	<effect_group>
+		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffNightGamestageBoostStart"/>
+		
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffNightGamestageBoostStart"/>
+	</effect_group> 
+
+	<effect_group>
+		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffNightGamestageBoostEnd"/>
+		
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffNightGamestageBoostEnd"/>
+	</effect_group>  
+	 
+	</append>
+</config>

@@ -1,0 +1,18 @@
+<DurielProgression>
+
+<!-- This makes the recipes unlockable with the needed levels of Master Chef -->
+	<!-- For level 1 - more than 1 line if needed to not take to much longer in each line -->
+	<append xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,5']/@tags">,foodDurielBaconSandwich,foodDurielBaconAndPeas,foodDurielBoiledMeatAndPeas,foodDurielMashPotato</append>
+	<append xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,5']/@tags">,foodDurielBigSteak,foodDurielEnormousSteak,foodDurielBigBoiledMeat,foodDurielPineForestSalad</append>
+	<append xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,5']/@tags">,drinkDurielBigYellowTea,drinkDurielBigRedTea,foodDurielHoneyNugget</append>
+	<!-- For level 2 - more than 1 line if needed to not take to much longer in each line -->
+	<append xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2,5']/@tags">,foodDurielCompleteStew,drinkDurielYuccaBeer,drinkDurielPumpkinBeer,drinkDurielBlueberryBeer</append>
+	<append xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2,5']/@tags">,foodDurielHoneyHam,foodDurielSteakAndEggs</append>
+	<!-- For level 3 - more than 1 line if needed to not take to much longer in each line -->
+	<append xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3,5']/@tags">,drinkDurielHoneybrewMead,foodDurielFruitMix,foodDurielSedanLunch</append>
+	<!-- For level 4 -->
+	<append xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='4,5']/@tags">,drinkDurielVodka,foodDurielChickenStew,foodDurielChickenNoodles,foodDurielZombieOmelet</append>
+	<!-- For level 5 -->
+	<append xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='5,5']/@tags">,drinkDurielHealthPotion</append>
+
+</DurielProgression>

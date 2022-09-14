@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Improved and Realistic Fire Rate" />
+		<Description value="This small mod alters the base fire rate of some guns to match its real life counterpart and make the guns feel better to shoot." />
+		<Author value="3vTAC" />
+		<Version value="v1.0.4" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

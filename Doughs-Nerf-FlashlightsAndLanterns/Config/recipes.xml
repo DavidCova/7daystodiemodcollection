@@ -1,0 +1,52 @@
+<Doughs>
+
+
+  <!--
+  ########## New items ##########
+  -->
+
+  <!-- DOUGH: Make Flashlights require batteries, light and Flashlights shell -->
+  <remove xpath="/recipes/recipe[@name='meleeToolFlashlight02']/ingredient[@name='resourceForgedIron']" />
+  <remove xpath="/recipes/recipe[@name='meleeToolFlashlight02']/ingredient[@name='resourceScrapPolymers']" />
+
+  <append xpath="/recipes/recipe[@name='meleeToolFlashlight02']">
+    	<ingredient name="doughsMeleeToolEmptyFlashlight" count="1"/>
+    	<ingredient name="doughsCellC" count="4"/>
+      <ingredient name="doughsResourceSmallBulb" count="1"/> <!-- was 2 ... seemed a pain to justify -->
+  </append>
+
+  <!-- DOUGH: Make lantern require batteries, remove ...headlight (takes oil...it is a oil powered lamp)? -->
+  <remove xpath="/recipes/recipe[@name='lanternLight_player']/ingredient[@name='resourceHeadlight']" />
+
+  <append xpath="/recipes/recipe[@name='lanternLight_player']">
+      <ingredient name="doughsResourceSmallBulb" count="4"/> <!-- Make 4 because it uses the big headlight -->
+  </append>
+
+  <!-- DOUGH: Cant make scrapping my flashlights (looted) give batteries
+   sooo...take flashlights apart? hmmm...craft batteries?
+  -->
+  <append xpath="/recipes">
+
+    <recipe name="doughsResourceSmallBulb" count="2"> <!-- 1/2 back ;) -->
+      <ingredient name="lanternLight_player" count="1"/>
+    </recipe>
+
+    <recipe name="doughsCellC" count="2"> <!-- 1/2 back ;) -->
+    	<ingredient name="meleeToolFlashlight02" count="1"/>
+    </recipe>
+
+    <recipe name="doughsResourceSmallBulb" count="1">
+      <ingredient name="meleeToolFlashlight02" count="1"/>
+    </recipe>
+
+    <recipe name="carBattery" count="1" craft_area="chemistryStation" tags="learnable,perkGreaseMonkey,chemStationCrafting">
+      <ingredient name="doughsCellC" count="6"/> <!-- They're really powerful ;) -->
+      <ingredient name="resourceScrapPolymers" count="6"/>
+      <ingredient name="resourceElectricParts" count="6"/>
+      <ingredient name="resourceDuctTape" count="2"/>
+    </recipe>
+
+  </append>
+
+
+</Doughs>

@@ -1,0 +1,158 @@
+<configs>
+
+	<append xpath="/ui_display_info/item_display">
+	
+		<item_display_info display_type="drugDetoxDisplay" display_group="groupConsumables">
+			<display_entry name="dDetox" title_key="statDetox" display_type="Percent" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+		</item_display_info>
+	
+		<item_display_info display_type="medicalIsopropylAlcohol" display_group="groupConsumables">
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent"/>
+		</item_display_info>
+
+		<item_display_info display_type="medicalAntibioticOintment" display_group="groupConsumables">
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="dhealAbrasionMult" title_key="statHealAbrasionMult" display_type="Percent"/>
+			<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent"/>
+		</item_display_info>
+
+		<item_display_info display_type="medicalUnsterile" display_group="groupConsumables">
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
+			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Percent"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="medicalSuture" display_group="groupConsumables">
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
+			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Percent"/>
+		</item_display_info>
+
+		<item_display_info display_type="medicalCureInfection" display_group="groupConsumables">
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
+			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Percent"/>
+			<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent"/>
+		</item_display_info>
+
+		<item_display_info display_type="medicalPainkillersPlus" display_group="groupConsumables">
+			<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" />
+			<display_entry name="dStopsConcussion" title_key="statStopsConcussion" display_type="Percent"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugSteroidsPlus" display_group="groupConsumables">
+			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true"/>
+			<display_entry name="dStaminaMax" title_key="statStaminaMax" display_leading_plus="true"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugRecogPlus" display_group="groupConsumables">
+			<display_entry name="dEntityDamage" title_key="statEntityDamageRanged" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dReloadSpeed" title_key="statReloadSpeed" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugFortBitesPlus" display_group="groupConsumables">
+			<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dMaxHealthBonus" title_key="statMaxHealthBonus" display_leading_plus="true"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dHypothermalResist" title_key="statHypothermalResist" display_leading_plus="true"/>
+			<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugAtomJunkiesPlus" display_group="groupConsumables">
+			<display_entry name="dExDamageEntity" display_type="Percent" title_key="statEntityDamageExplosion" display_leading_plus="true"/>
+			<display_entry name="dExDamageBlock" display_type="Percent" title_key="statBlockDamageExplosion" display_leading_plus="true"/>
+			<display_entry name="dDismemberChance" display_type="Percent" title_key="statDismemberChance" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugCovertCatsPlus" display_group="groupConsumables">
+			<display_entry name="dEntityDamageSneak" title_key="statEntityDamageSneak" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dNoise" title_key="statNoise" display_type="Percent" negative_preferred="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugEyeKandyPlus" display_group="groupConsumables">
+			<display_entry name="dLootGamestageFlat" title_key="statLootGamestage" display_leading_plus="true"/>
+			<display_entry name="dLootGamestagePerc" title_key="statLootGamestage" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dLootTime" title_key="statLootTime" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugHackersPlus" display_group="groupConsumables">
+			<display_entry name="dHarvestSalvage" title_key="statHarvestSalvage" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDismemberChance" display_type="Percent" title_key="statDismemberChance" display_leading_plus="true"/>
+			<display_entry name="dHarvestXP" display_type="Percent" title_key="statHarvestXP" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugHealthBarPlus" display_group="groupConsumables">
+			<display_entry name="dMaxHealthBonus" title_key="statMaxHealthBonus" display_leading_plus="true"/>
+			<display_entry name="dBuffResistance" title_key="statBuffResistance" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dNaturalCritHealing" title_key="statNaturalCritHealing" display_type="Percent"/>
+			<display_entry name="dMaxStatBlocked" title_key="statMaxBlocked"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugJailBreakersPlus" display_group="groupConsumables">
+			<display_entry name="dLockpickSuccess" title_key="statLockpickSuccess" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dLockpickSpeed" title_key="statLockpickSpeed" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugNerdTatsPlus" display_group="groupConsumables">
+			<display_entry name="dShockAOERadius" title_key="statShockAOERadius" display_type="Decimal2"/>
+			<display_entry name="dCraftingTime" title_key="statCraftingTime" display_type="Percent" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugOhShitzDropsPlus" display_group="groupConsumables">
+			<display_entry name="dFallDamage" title_key="statFallDamage" display_type="Percent"/>
+			<display_entry name="dJumpHeightPlus" title_key="statJumpHeightPlus" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugRockBustersPlus" display_group="groupConsumables">
+			<display_entry name="dHarvestMining" title_key="statHarvestMining" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dBlockDamage" title_key="statBlockDmg" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugSkullCrushersPlus" display_group="groupConsumables">
+			<display_entry name="dEntityDamage" title_key="statEntityDamageMelee" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dSwingStamina" title_key="statSwingStamins" display_type="Percent" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+		<item_display_info display_type="drugSugarButtsPlus" display_group="groupConsumables">
+			<display_entry name="dBarteringSellBuy" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		</item_display_info>
+
+	</append>
+
+</configs>

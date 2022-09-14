@@ -1,0 +1,34 @@
+<configs>
+
+<append xpath="//trader_item_group[@name='rareMedicine']">
+	<item name="drugDetox"/>
+	<item name="drugSteroids"/>
+	<item name="drugRecog"/>
+	<item name="drugFortBites"/>
+	<item name="drugAtomJunkies"/>
+	<item name="drugCovertCats"/>
+	<item name="drugEyeKandy"/>
+	<item name="drugHackers"/>
+	<item name="drugHealthBar"/>
+	<item name="drugJailBreakers"/>
+	<item name="drugNerdTats"/>
+	<item name="drugOhShitzDrops"/>
+	<item name="drugRockBusters"/>
+	<item name="drugSkullCrushers"/>
+	<item name="drugSugarButts"/>
+</append>
+
+<append xpath="//trader_item_group[@name='medicine']">
+	<item name="drugDetox"/>
+</append>
+
+<append xpath="//trader_item_group[@name='foodCandy']">
+	<item name="drugSteroids"/>
+	<item name="drugRecog"/>
+	<item name="drugFortBites"/>
+	<item name="drugPainkillers"/>
+	<item name="drugVitamins"/>
+	<item name="drugDetox"/>
+</append>
+
+</configs>

@@ -1,0 +1,16 @@
+Planned Changes v1.0 (none are guaranteed)
+- Healing darts ammunition
+- Deployable healing items (healing areas) [time bomb?]
+- Medic Armor (self healing / drug application)
+
+Change Log v1.2.2
+- Fixed some buffs not shutting down properly
+
+Change Log v1.2.1
+- Fixed Withdrawals not properly shutting down
+
+Change Log v1.2
+- Fixed Fort Bites display
+- Adjusted Infection chances on medical items to be lower
+- Adjusted Addiction chances to be lower
+- Fixed items not healing others properly

@@ -1,0 +1,337 @@
+<configs>
+	<append xpath="/items/item[@name='foodCanChicken']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanLamb']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+<!-- 	<append xpath="/items/item[@name='foodCanCatfood']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append> -->
+<!-- 	<append xpath="/items/item[@name='foodCanDogfood']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append> -->
+	<append xpath="/items/item[@name='foodCanChili']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanTuna']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanSham']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanPasta']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanSalmon']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanMiso']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanPeas']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanPears']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+<!-- 	<append xpath="/items/item[@name='foodCanSoup']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append> -->
+<!-- 	<append xpath="/items/item[@name='foodCanStock']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append> -->
+
+	<append xpath="/items/item[@name='foodCornOnTheCob']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodCornBread']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodShamSandwich']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCharredMeat']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodGrilledMeat']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodBoiledMeat']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodMeatStew']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodSteakAndPotato']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="40"/>
+	</append>
+	<append xpath="/items/item[@name='foodShamChowder']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="40"/>
+	</append>
+	<append xpath="/items/item[@name='foodHoboStew']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="40"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodFishTacos']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodChiliDog']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodBakedPotato']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodBlueberryPie']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="30"/>
+	</append>
+	<append xpath="/items/item[@name='foodPumpkinPie']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="60"/>
+	</append>
+	<append xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="50"/>
+	</append>
+	<append xpath="/items/item[@name='foodPumpkinBread']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodGumboStew']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="30"/>
+	</append>
+	<append xpath="/items/item[@name='foodShepardsPie']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="30"/>
+	</append>
+	<append xpath="/items/item[@name='foodSpaghetti']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="30"/>
+	</append>
+	<append xpath="/items/item[@name='foodTunaFishGravyToast']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="30"/>
+	</append>
+
+	<append xpath="/items/item[@name='foodEggBoiled']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodBaconAndEggs']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+	</append>
+	<append xpath="/items/item[@name='foodVegetableStew']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodRawMeat']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+<!-- 	<append xpath="/items/item[@name='foodRottingFlesh']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append> -->
+	<append xpath="/items/item[@name='foodEgg']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodCornMeal']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCropBlueberries']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCropCorn']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCropGraceCorn']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCropPotato']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCropMushrooms']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCropYuccaFruit']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodCropPumpkin']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+<!-- 
+	<append xpath="/items/item[@name='drinkJarYuccaJuice']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGoldenRodTea']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarRedTea']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarYuccaCocktail']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkCanMegaCrush']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarCoffee']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarBeer']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='bucketEmpty']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='bucketRiverWater']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append> -->
+
+	<!-- Other Mods -->
+	<!-- Chicken Coops -->
+	<append xpath="/items/item[@name='foodEggQuiche']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="50"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodEggSandwich']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+
+	<!-- Underground Farming -->
+	<append xpath="/items/item[@name='foodHydroponicMixedVegetableSoup']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodHydroponicMixedFruitBowl']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodHydroponicFruitMuffin']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodHydroponicSalmonBake']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="40"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="30"/>
+	</append>
+
+	<!-- JaxTeller718's Nuts and Berries -->
+	<append xpath="/items/item[@name='handfulOfNutsJT']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='handfulOfBerriesJT']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='handfulOfNutsJT']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='handfulOfBerriesJT']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	
+	<!-- Telric's fishing -->
+	<append xpath="/items/item[@name='foodGrilledFishFillet']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodMarinatedTunaSteak']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodFriedBluegil']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodFriedCatfish']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodGrilledCrabCake']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodGlazedMackerel']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
+	</append>
+	<append xpath="/items/item[@name='foodBlackenedRedSnapper']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodFriedShadRoeandBacon']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="80"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodGrilledOctopus']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodFriedShrimp']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodFriedTrout']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="70"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="30"/>
+	</append>
+	<append xpath="/items/item[@name='foodSearedBass']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='foodRoastedGrouper']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="20"/>
+	</append>
+	<append xpath="/items/item[@name='foodFriedCrappieCake']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="10"/>
+	</append>
+
+
+	<!--
+	<append xpath="/items/item[@name='foodShamChowder']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="40"/>
+	</append>
+	-->
+</configs>

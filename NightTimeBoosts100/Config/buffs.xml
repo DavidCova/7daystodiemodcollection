@@ -1,0 +1,65 @@
+<config>
+	<append xpath="/buffs">
+	
+		<!-- Night Time EXP Buff -->
+	<buff name="buffNightExpBoost" name_key="Night EXP Boost" tooltip_key="buffNightExpBoostTooltip"
+description_key="buffNightExpBoostDesc" icon="ui_game_symbol_xp">
+		<stack_type value="ignore"/>
+		<effect_group>
+			<requirement name="IsNight"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="1" tags="Kill" />
+		</effect_group>
+	</buff>
+
+		<!-- Night Time EXP Buff - Icon shows up at Night. -->
+	<buff name="buffNightExpBoostStart" hidden="true">
+		<stack_type value="ignore"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<requirement name="IsNight"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffNightExpBoost"/>
+		</effect_group>
+	</buff>
+
+		<!-- Night Time EXP Buff - Icon goes away when Day. Tooltip doesn't work. -->
+	<buff name="buffNightExpBoostEnd" tooltip_key="buffNightExpBoostEndTooltip" hidden="true">
+		<stack_type value="ignore"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<requirement name="IsDay"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNightExpBoost"/>
+		</effect_group>
+	</buff>
+
+			<!-- Night Time Gamestage Buff -->
+	<buff name="buffNightGamestageBoost" name_key="Night Loot Boost" description_key="buffNightGamestageBoostDesc" icon="ui_game_symbol_loot_sack">
+		<stack_type value="ignore"/>
+		<effect_group>
+			<requirement name="IsNight"/>
+			<passive_effect name="LootGamestage" operation="base_add" value="20"/>
+			<passive_effect name="LootGamestage" operation="perc_add" value=".1"/>
+		</effect_group>
+	</buff>
+
+		<!-- Night Time Gamestage Buff - Icon shows up when Night. -->
+	<buff name="buffNightGamestageBoostStart" hidden="true">
+		<stack_type value="ignore"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<requirement name="IsNight"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffNightGamestageBoost"/>
+		</effect_group>
+	</buff>
+
+		<!-- Night Time Gamestage Buff - Icon goes away when Day. -->
+	<buff name="buffNightGamestageBoostEnd" hidden="true">
+		<stack_type value="ignore"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<requirement name="IsDay"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNightGamestageBoost"/>
+		</effect_group>
+	</buff>
+
+	</append>
+</config>

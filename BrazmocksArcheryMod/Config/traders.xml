@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BrazmocksArcheryMod>
+
+<!-- Mods -->
+
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT1']">
+	<item name="modGunBowMiniLegolasMagExtender"/>
+	<item name="modGunBowMiniCrossbowLegolasMagExtender"/>
+</append>
+
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='modGunT3']">
+	<item name="modGunBowLegolasMagExtender"/>
+	<item name="modGunBowCrossbowLegolasMagExtender"/>
+</append>
+
+
+
+<!-- Weapons -->
+
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='weaponsGunsT2']">
+	<item name="gunBowRecurve"/>
+	<item name="gunBowRecurveCrossbow"/>
+</append>
+
+<!-- Ammo -->
+
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']">
+	<item name="ammoArrowAluminiumIron"/>
+	<item name="ammoArrowAluminiumSteelAP"/>
+	<item name="ammoArrowCarbonSteelAP"/>
+	<item name="ammoCrossbowBoltAluminiumIron"/>
+	<item name="ammoCrossbowBoltAluminiumSteelAP"/>
+	<item name="ammoCrossbowBoltCarbonSteelAP"/>
+</append>
+
+<!-- Workstations -->
+
+<!--<append xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']">
+	<item name="Fletchersbench"/>
+	<item name="Compositebench"/>
+</append>-->
+
+<!-- Schematics -->
+
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+	<item name="modGunBowMiniLegolasMagExtenderSchematic"/>
+	<item name="modGunBowLegolasMagExtenderSchematic"/>
+	<item name="modGunBowMiniCrossbowLegolasMagExtenderSchematic"/>
+	<item name="modGunBowCrossbowLegolasMagExtenderSchematic"/>
+</append>
+
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsWeaponsCommon']">
+	<item name="gunBowFletcherSchematic"/>
+	<item name="gunBowRecurveSchematic"/>
+	<item name="gunBowHybridCamCompoundSchematic"/>
+	<item name="gunBowHybridCamCompoundCrossbowSchematic"/>
+</append>
+
+</BrazmocksArcheryMod>

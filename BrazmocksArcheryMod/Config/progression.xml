@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BrazmocksArcheryMod>
+
+<!--    <remove xpath="/progression/perks[@min_level='0']/perk[@name='perkArchery']/effect_group/passive_effect[@name='RoundsPerMinute']"/>
+    <remove xpath="/progression/perks[@min_level='0']/perk[@name='perkArchery']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']"/>
+
+<append xpath="/progression/perks[@min_level='0']/perk[@name='perkArchery']/effect_group">
+		<passive_effect name="MagazineSize"  operation="base_set"  level="1,2,3,4,5"  value="1,2,3,4,5"  tags="archery"/>
+</append> -->
+
+
+<!-- Archery -->
+
+<append xpath="/progression/perks/perk[@name='perkRangersAPAmmo']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,ammoArrowCarbonSteelAP,ammoArrowAluminiumSteelAP,ammoArrowAluminiumCarbonSteelAP,ammoArrowFiberSteelAP,ammoArrowFiberCarbonSteelAP,ammoCrossbowBoltSteelAP,ammoCrossbowBoltCarbonSteelAP,ammoCrossbowBoltAluminiumSteelAP,ammoCrossbowBoltAluminiumCarbonSteelAP,ammoCrossbowBoltFiberSteelAP,ammoCrossbowBoltFiberCarbonSteelAP</append>
+
+<append xpath="/progression/perks/perk[@name='perkArchery']">
+    <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="gunBowFletcher"/>
+    </effect_group>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkArchery']">
+    <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="gunBowT1WoodenBowParts"/>
+    </effect_group>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkArchery']">
+    <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunBowRecurve,gunBowRecurveCrossbow"/>
+    </effect_group>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkArchery']">
+    <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="gunBowT3HighPoweredCompoundParts,resourceCarbonFiber,ammoArrowFiberStone,ammoArrowFiberIron,ammoCrossbowBoltFiberStone,ammoCrossbowBoltFiberIron"/>
+    </effect_group>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkArchery']">
+    <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunBowHybridCamCompound,gunBowHybridCamCompoundCrossbow"/>
+    </effect_group>
+</append>
+
+</BrazmocksArcheryMod>
