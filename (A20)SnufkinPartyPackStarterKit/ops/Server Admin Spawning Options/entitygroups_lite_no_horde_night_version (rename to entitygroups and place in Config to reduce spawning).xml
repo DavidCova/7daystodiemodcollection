@@ -187,7 +187,7 @@ Please note, the Juggernaut and Golden Juggernaut have been added to one group o
 		<entity name="zombieCrispy" prob="0.05"/>		
 	</append>
 	
-	<append xpath="/entitygroups">
+	<!-- <append xpath="/entitygroups">
 		<entitygroup name="ZombiesWastelandNightHard">
 		<entity name="ZombieArchon" prob="0.05"/>
 		<entity name="zombieBanshee" prob="0.1"/>
@@ -232,7 +232,7 @@ Please note, the Juggernaut and Golden Juggernaut have been added to one group o
 		<entity name="zombieBogeyman" prob="0.2"/>
 		<entity name="zombieCrispy" prob="0.2"/>
 		<entity name="zombieDemolitionDerby" prob="0.1"/>		
-	</entitygroup>
+	</entitygroup> -->
 		
 	<entitygroup name="ZombiesForestDowntown">
 		<entity name="zombieBoe"/>

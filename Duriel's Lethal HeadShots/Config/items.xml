@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<configs>
+
+<!--========================================== Firearms ===============================================-->
+<!-- AP ammo will pierce through helmets and blow heads off no matter what 
+									with the same chance as normal ammo for a normal zombie -->
+	
+										<!--========== Shotgun and Blunderbuss Bucks and Slugs ==========-->
+
+	<append xpath="/items/item[@name='ammoShotgunShell']/effect_group[@name='ammoShotgunShell']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5"/>
+	</append>
+
+	<append xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='ammoShotgunSlug']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5"/>
+	</append>
+
+	<append xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group[@name='ammoShotgunBreachingSlug']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5"/>
+	</append>
+	
+	<!-- <append xpath="/items/item[@name='ammoBlunderbuss']/effect_group[@name='ammoBlunderbuss']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5"/>
+	</append> -->
+	
+										<!--========== Guns Bullets ==========-->
+	
+	<append xpath="/items/item[contains(@name, 'BulletBall') and not(contains(@name, 'Bundle'))]/effect_group[contains(@name, 'BulletBall')]">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+	<append xpath="/items/item[contains(@name, 'BulletHP') and not(contains(@name, 'Bundle'))]/effect_group[contains(@name, 'BulletHP')]">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+	<!--<append xpath="/items/item[contains(@name, 'BulletAP') and not(contains(@name, 'Bundle'))]/effect_group[contains(@name, 'BulletAP')]">
+		<passive_effect name="DismemberChance" operation="base_set" value="5" tags="head"/>
+	</append>-->
+	<append xpath="/items/item[contains(@name, 'BulletAP') and not(contains(@name, 'Bundle'))]/effect_group[contains(@name, 'BulletAP')]">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head">
+				<requirement name="EntityTagCompare" target="other" tags="nohelmet"/>
+		</passive_effect>
+	</append>
+	<append xpath="/items/item[contains(@name, 'BulletAP') and not(contains(@name, 'Bundle'))]/effect_group[contains(@name, 'BulletAP')]">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head">
+				<requirement name="EntityTagCompare" target="other" tags="helmet"/>
+		</passive_effect>
+	</append>
+	
+										<!--========== Arrows ==========-->
+	
+	<append xpath="/items/item[@name='ammoArrowStone']/effect_group[@name='ammoArrowStone']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+
+	<append xpath="/items/item[@name='ammoArrowIron']/effect_group[@name='ammoArrowIron']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+	<!--
+	<append xpath="/items/item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']">
+		<passive_effect name="DismemberChance" operation="base_set" value="5" tags="head"/>
+	</append>-->
+	<append xpath="/items/item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head">
+				<requirement name="EntityTagCompare" target="other" tags="nohelmet"/>
+		</passive_effect>
+	</append>
+	<append xpath="/items/item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']">
+		<passive_effect name="DismemberChance" operation="base_set" value="5" tags="head">
+				<requirement name="EntityTagCompare" target="other" tags="helmet"/>
+		</passive_effect>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoArrowFlaming']/effect_group[@name='ammoArrowFlaming']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+										<!--========== Crossbow Bolts ==========-->
+	
+	<append xpath="/items/item[@name='ammoCrossbowBoltStone']/effect_group[@name='ammoCrossbowBoltStone']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+
+	<append xpath="/items/item[@name='ammoCrossbowBoltIron']/effect_group[@name='ammoCrossbowBoltIron']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+	<!--<append xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']">
+		<passive_effect name="DismemberChance" operation="base_set" value="5" tags="head"/>
+	</append>-->
+	<append xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head">
+				<requirement name="EntityTagCompare" target="other" tags="nohelmet"/>
+		</passive_effect>
+	</append>
+	<append xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']">
+		<passive_effect name="DismemberChance" operation="base_set" value="5" tags="head">
+				<requirement name="EntityTagCompare" target="other" tags="helmet"/>
+		</passive_effect>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoCrossbowBoltFlaming']/effect_group[@name='ammoCrossbowBoltFlaming']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+										<!--========== Turrets Ammo ==========-->
+	
+	<append xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="head"/>
+	</append>
+
+<!--========================================== Melee Weapons ===============================================-->
+	
+										<!--========== Bladed Weapons ==========-->
+	
+	<append xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".15" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".25" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".25" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".35" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".35" tags="primary, head, upperbody, lowerbody"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="secondary, head, upperbody, lowerbody"/>
+	</append>
+	
+										<!--========== Bats and Clubs ==========-->
+	
+	<append xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".1" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".2" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".15" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".3" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".3" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="secondary, head"/>
+	</append>
+	
+										<!--========== Electric Batons ==========-->
+	
+	<!-- <append xpath="/items/item[@name='meleeWpnBatonT1JunkBaton']/effect_group[@name='meleeWpnBatonT1JunkBaton']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".15" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBatonT1JunkBaton']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".25" tags="secondary, head"/>
+	</append> -->
+	
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".2" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".3" tags="secondary, head"/>
+	</append>
+	
+	<!-- <append xpath="/items/item[@name='meleeWpnBatonT3PlasmaBaton']/effect_group[@name='meleeWpnBatonT3PlasmaBaton']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".3" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBatonT3PlasmaBaton']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="secondary, head"/>
+	</append> -->
+	
+										<!--========== Spears ==========-->
+	
+	<append xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".2" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='Throw']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".3" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".3" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='Throw']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".4" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".4" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='Throw']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="secondary, head"/>
+	</append>
+	
+										<!--========== Knuckles ==========-->
+	
+	<append xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".05" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".1" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".15" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".2" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".3" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".4" tags="secondary, head"/>
+	</append>
+	
+										<!--========== Sledgehammers ==========-->
+	
+	<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='DismemberChance']/@value">.15</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='DismemberChance']/@value">.25</set>
+	
+	<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='DismemberChance']/@value">.25</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='DismemberChance']/@value">.35</set>
+	
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='DismemberChance']/@value">.35</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='DismemberChance']/@value">.5</set>
+	
+										<!--========== Stone Axe ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/effect_group[@name='meleeToolRepairT0StoneAxe']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".15" tags="primary, head"/>
+	</append>
+	
+										<!--========== Pickaxes ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".2" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".3" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".4" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="secondary, head"/>
+	</append>
+	
+										<!--========== Fireaxes ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".25" tags="primary, head, upperbody, lowerbody"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".35" tags="secondary, head, upperbody, lowerbody"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".4" tags="primary, head, upperbody, lowerbody"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="secondary, head, upperbody, lowerbody"/>
+	</append>
+	
+										<!--========== Shovels ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/effect_group[@name='meleeToolShovelT0StoneShovel']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".1" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".2" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='meleeToolShovelT1IronShovel']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".2" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".35" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".35" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".5" tags="secondary, head"/>
+	</append>
+	
+										<!--========== Salvaging Tools ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".15" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".25" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='meleeToolSalvageT2Ratchet']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".15" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".25" tags="secondary, head"/>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".15" tags="primary, head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='Power Attack']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".25" tags="secondary, head"/>
+	</append>
+	
+										<!--========== Claw Hammer ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/effect_group[@name='meleeToolRepairT1ClawHammer']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".2" tags="primary, head"/>
+	</append>
+	
+										<!--========== Nailgun ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolRepairT3Nailgun']/effect_group[@name='meleeToolRepairT3Nailgun']">
+		<passive_effect name="DismemberChance" operation="base_set" value=".35" tags="primary, head"/>
+	</append>
+	
+										<!--========== Chainsaw ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']">
+		<passive_effect name="DismemberChance" operation="base_set" value="1" tags="primary, head, upperbody, lowerbody"/>
+	</append>
+	
+										<!--========== Auger ==========-->
+	
+	<append xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']">
+		<passive_effect name="DismemberChance" operation="base_set" value="1" tags="primary, head"/>
+	</append>
+	
+</configs>

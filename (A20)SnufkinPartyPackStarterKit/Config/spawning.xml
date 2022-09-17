@@ -2,9 +2,9 @@
 	<append xpath="/spawning/biome[@name='desert']">
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesDesertNight" />
 	</append>-->
-	<append xpath="/spawning/biome[@name='wasteland']">
+	<!-- <append xpath="/spawning/biome[@name='wasteland']">
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNightHard" />
-	</append>
+	</append> -->
 </configs>
 
 

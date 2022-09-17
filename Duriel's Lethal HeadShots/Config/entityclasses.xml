@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<configs>
+
+	<!-- Adds 200% more headshot damage by player on helmet zombies -->
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Football') or contains(@name, 'Biker') or contains(@name, 'Demolition') or contains(@name, 'Soldier') or contains(@name, 'Utility')]/property[@name='Tags']/@value">,helmet</append>
+	<!--<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier' and contains(@tags, 'head')]/@value">10</set>-->
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group>
+			<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head">
+				<requirement name="EntityTagCompare" target="other" tags="helmet"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+
+	<!-- Adds 1000% more headshot damage by player on no-helmet zombies, also as animals don't have helmets then they are concerned by the nohelmet tag -->
+	<append xpath="/entity_classes/entity_class[not(contains(@name, 'Football')) and not(contains(@name, 'Biker')) and not(contains(@name, 'Demolition')) and not(contains(@name, 'Soldier')) and not(contains(@name, 'Utility'))]/property[@name='Tags']/@value">,nohelmet</append>
+	<!--<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier' and contains(@tags, 'head')]/@value">10</set>-->
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group>
+			<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="head">
+				<requirement name="EntityTagCompare" target="other" tags="nohelmet"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<!-- Helmet zombies dismember head values at only 10% because weapons have now more base chance to dismember head -->
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Football')]">
+		<property name="DismemberMultiplierHead" value=".1"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Biker')]">
+		<property name="DismemberMultiplierHead" value=".1"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Demolition')]">
+		<property name="DismemberMultiplierHead" value=".1"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Soldier')]">
+		<property name="DismemberMultiplierHead" value=".1"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Utility')]">
+		<property name="DismemberMultiplierHead" value=".1"/>
+	</append>
+
+</configs>

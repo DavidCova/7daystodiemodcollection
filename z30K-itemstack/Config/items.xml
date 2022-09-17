@@ -3,7 +3,7 @@
 	<set xpath="/items/item/property[@name='Stacknumber' and not(@value='1')]/@value">30000</set>
 	<set xpath="/items/item[starts-with(@name, 'tool')]/property[@name='Stacknumber']/@value">30000</set>	
 	<set xpath="/items/item[@name='schematicMaster']/property[@name='Stacknumber']/@value">30000</set>
-	<set xpath="/items/item[@name='medicalBloodDrawKit']/property[@name='Stacknumber']/@value">30000</set>
+	<!-- <set xpath="/items/item[@name='medicalBloodDrawKit']/property[@name='Stacknumber']/@value">30000</set> -->
 	<set xpath="/items/item[@name='smallEngine']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='questMaster']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">30000</set>
