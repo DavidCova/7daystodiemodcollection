@@ -1,264 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<append xpath="entity_classes/entity_class[@name='zombieTemplateMale']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieArlene']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieArleneFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieArleneRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMarlene']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMarleneFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMarleneRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombiePartyGirl']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombiePartyGirlFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombiePartyGirlRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieNurse']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieNurseFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieNurseRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieJoe']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieJoeFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieJoeRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSteve']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSteveFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSteveRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieTomClark']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieTomClarkFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieTomClarkRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBusinessMan']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBusinessManFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBusinessManRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBurnt']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBurntFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBurntRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSpider']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSpiderFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSpiderRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBoe']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBoeFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBoeRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieJanitor']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieJanitorFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieJanitorRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMoe']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMoeFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMoeRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieLab']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieLabFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieLabRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieDarlene']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieDarleneFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieDarleneRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieYo']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieYoFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieYoRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorker']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorkerFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBiker']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBikerFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieBikerRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieLumberjack']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieLumberjackFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieLumberjackRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFemaleFat']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFemaleFatFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFemaleFatRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiian']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiianFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiianRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMaleHazmat']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMaleHazmatFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMaleHazmatRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFatCop']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFatCopFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieFatCopRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSkateboarder']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSkateboarderFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSkateboarderRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSoldier']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSoldierFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSoldierRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieWightFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieWightRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieScreamer']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieScreamerFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieScreamerRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMutated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMutatedFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieMutatedRadiated']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieDemolition']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSteveCrawler']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 	<append xpath="entity_classes/entity_class[@name='zombieSteveCrawlerFeral']">
-		<property name="TimeStayAfterDeath" value="7"/>
+		<property name="TimeStayAfterDeath" value="12"/>
 	</append>
 </configs>

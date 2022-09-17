@@ -562,13 +562,13 @@ groupZpackBoss
 		<!-- zombieArlene -->
 		<lootcontainer id="210" name="zombieArlene" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.1"/>
+			<item group="foodGoodCan" prob="0.2"/>
 			<item group="foodNice" prob="0.05"/>
 			<item group="foodRotting" prob="0.9"/>
 			<item group="foodHomeMade" prob="0.6"/>
 			<item group="foodAnimal" prob="0.8"/>
 			<item group="foodDrink" prob="0.6"/>
-			<item group="famaleClothes" prob="0.4"/>
+			<item group="famaleClothes" prob="0.225"/>
 			<item group="meleeKnifes" prob="0.2"/>
 			<item name="drugCovertCats" prob="0.05"/>
 		</lootcontainer>
@@ -582,7 +582,7 @@ groupZpackBoss
 			<item group="foodHomeMade" prob="0.5"/>
 			<item group="foodAnimal" prob="0.6"/>
 			<item group="foodDrink" prob="0.7"/>
-			<item group="famaleClothes" prob="0.4"/>
+			<item group="famaleClothes" prob="0.225"/>
 			<item group="meleeKnifes" prob="0.4"/>
 			<item name="drugCovertCats" prob="0.1"/>
 			<item group="groupZpackStrong" prob="0.3"/>
@@ -597,7 +597,7 @@ groupZpackBoss
 			<item group="foodHomeMade" prob="0.7"/>
 			<item group="foodAnimal" prob="0.4"/>
 			<item group="foodDrink" prob="0.8"/>
-			<item group="famaleClothes" prob="0.4"/>
+			<item group="famaleClothes" prob="0.225"/>
 			<item group="meleeKnifes" prob="0.6"/>
 			<item name="drugCovertCats" prob="0.2"/>
 			<item group="groupZpackBoss" prob="0.1"/>
@@ -606,7 +606,7 @@ groupZpackBoss
 		<!-- zombieMarlene -->
 		<lootcontainer id="213" name="zombieMarlene" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.02"/>
+			<item group="foodGoodCan" prob="0.025"/>
 			<item group="foodNice" prob="0.02"/>
 			<item group="foodRotting" prob="0.9"/>
 			<item group="foodHomeMade" prob="0.6"/>
@@ -651,7 +651,7 @@ groupZpackBoss
 		<lootcontainer id="216" name="zombiePartygirl" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.7"/>
 			<item group="foodDrink" prob="0.6"/>
-			<item group="famaleClothes" prob="0.6"/>
+			<item group="famaleClothes" prob="0.225"/>
 			<item group="itemsMoney" prob="0.99"/>
 			<item name="drugSugarButts" prob="0.2"/>
 			<item name="drugVitamins" prob="0.2"/>
@@ -663,7 +663,7 @@ groupZpackBoss
 		<lootcontainer id="217" name="zombiePartygirlFeral" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.3"/>
 			<item group="foodDrink" prob="0.7"/>
-			<item group="famaleClothes" prob="0.6"/>
+			<item group="famaleClothes" prob="0.225"/>
 			<item group="itemsMoney" prob="0.95"/>
 			<item name="drugSugarButts" prob="0.3"/>
 			<item name="drugVitamins" prob="0.3"/>
@@ -676,7 +676,7 @@ groupZpackBoss
 		<lootcontainer id="218" name="zombiePartygirlRadiated" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.1"/>
 			<item group="foodDrink" prob="0.7"/>
-			<item group="famaleClothes" prob="0.6"/>
+			<item group="famaleClothes" prob="0.225"/>
 			<item group="itemsMoney" prob="0.95"/>
 			<item name="drugSugarButts" prob="0.3"/>
 			<item name="drugVitamins" prob="0.3"/>
@@ -689,8 +689,8 @@ groupZpackBoss
 		<lootcontainer id="219" name="zombieNurse" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.7"/>
 			<item group="foodMeds" prob="0.5"/>
-			<item group="ordinaryClothes" prob="0.7"/>
-			<item group="famaleClothes" prob="0.7"/>
+			<item group="ordinaryClothes" prob="0.225"/>
+			<item group="famaleClothes" prob="0.225"/>
 			<item name="plantedAloe1" count="1,3" prob="0.6"/>
 			<item name="plantedGoldenrod1" count="3,7"  prob="0.6"/>
 			<item name="medicalAloeCream" prob="0.6"/>
@@ -701,8 +701,8 @@ groupZpackBoss
 		<lootcontainer id="220" name="zombieNurseFeral" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.3"/>
 			<item group="foodMeds" prob="0.7"/>
-			<item group="ordinaryClothes" prob="0.6"/>
-			<item group="famaleClothes" prob="0.6"/>
+			<item group="ordinaryClothes" prob="0.225"/>
+			<item group="famaleClothes" prob="0.225"/>
 			<item name="plantedAloe1" count="3,7" prob="0.5"/>
 			<item name="plantedGoldenrod1" prob="0.5"/>
 			<item name="medicalAloeCream" prob="0.5"/>
@@ -714,8 +714,8 @@ groupZpackBoss
 		<lootcontainer id="221" name="zombieNurseRadiated" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.1"/>
 			<item group="foodMeds" prob="0.9"/>
-			<item group="ordinaryClothes" prob="0.8"/>
-			<item group="famaleClothes" prob="0.8"/>
+			<item group="ordinaryClothes" prob="0.28"/>
+			<item group="famaleClothes" prob="0.28"/>
 			<item name="plantedAloe1" count="3,7" prob="0.9"/>
 			<item name="plantedGoldenrod1" prob="0.7"/>
 			<item name="medicalAloeCream" prob="0.7"/>
@@ -729,7 +729,7 @@ groupZpackBoss
 			<item group="foodDrink" prob="0.8"/>
 			<item group="foodRotting" prob="0.9"/>
 			<item group="denimClothes" prob="0.9"/>
-			<item group="ordinaryClothes" prob="0.9"/>
+			<item group="ordinaryClothes" prob="0.29"/>
 			<item name="drinkJarGrandpasMoonshine" prob="0.05"/>
 		</lootcontainer>
 		
@@ -739,7 +739,7 @@ groupZpackBoss
 			<item group="foodDrink" prob="0.8"/>
 			<item group="foodRotting" prob="0.9"/>
 			<item group="denimClothes" prob="0.9"/>
-			<item group="ordinaryClothes" prob="0.9"/>
+			<item group="ordinaryClothes" prob="0.29"/>
 			<item group="meleeKnifes" prob="0.5"/>
 			<item group="ammo9mmBullets" prob="0.6"/>
 			<item group="ammo762mmBullets" prob="0.6"/>
@@ -753,7 +753,7 @@ groupZpackBoss
 			<item group="foodDrink" prob="0.5"/>
 			<item group="foodRotting" prob="0.9"/>
 			<item group="denimClothes" prob="0.9"/>
-			<item group="ordinaryClothes" prob="0.9"/>
+			<item group="ordinaryClothes" prob="0.29"/>
 			<item group="meleeKnifes" prob="0.7"/>
 			<item name="gunHandgunT1Pistol" prob="0.7"/>
 			<item name="drinkJarGrandpasMoonshine" prob="0.2"/>
@@ -948,7 +948,7 @@ groupZpackBoss
 		<lootcontainer id="237" name="zombieSpider" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.5"/>
 			<item group="foodAnimal" prob="0.1"/>
-			<item group="ordinaryClothes" prob="0.1"/>
+			<item group="ordinaryClothes" prob="0.21"/>
 			<item name="drugOhShitzDrops" prob="0.05"/>
 		</lootcontainer>
 		
@@ -956,7 +956,7 @@ groupZpackBoss
 		<lootcontainer id="238" name="zombieSpiderFeral" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.3"/>
 			<item group="foodAnimal" prob="0.4"/>
-			<item group="ordinaryClothes" prob="0.3"/>
+			<item group="ordinaryClothes" prob="0.23"/>
 			<item name="drugOhShitzDrops" prob="0.1"/>
 			<item group="groupZpackStrong" prob="0.3"/>
 		</lootcontainer>
@@ -965,7 +965,7 @@ groupZpackBoss
 		<lootcontainer id="239" name="zombieSpiderRadiated" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.1"/>
 			<item group="foodAnimal" prob="0.5"/>
-			<item group="ordinaryClothes" prob="0.3"/>
+			<item group="ordinaryClothes" prob="0.23"/>
 			<item name="drugOhShitzDrops" prob="0.3"/>
 			<item group="groupZpackBoss" prob="0.2"/>
 		</lootcontainer>
@@ -976,7 +976,7 @@ groupZpackBoss
 			<item group="foodDrink" prob="0.8"/>
 			<item group="foodRotting" prob="0.9"/>
 			<item group="denimClothes" prob="0.9"/>
-			<item group="ordinaryClothes" prob="0.9"/>
+			<item group="ordinaryClothes" prob="0.29"/>
 			<item name="drinkJarGrandpasLearningElixir" prob="0.05"/>
 		</lootcontainer>
 		
@@ -987,7 +987,7 @@ groupZpackBoss
 			<item group="foodRotting" prob="0.9"/>
 			<item group="denimClothes" prob="0.9"/>
 			<item group="itemsMoney" prob="0.99"/>
-			<item group="ordinaryClothes" prob="0.9"/>
+			<item group="ordinaryClothes" prob="0.29"/>
 			<item group="meleeKnifes" prob="0.5"/>
 			<item group="meleeClubs" prob="0.5"/>
 			<item group="ammo9mmBullets" prob="0.6"/>
@@ -1003,7 +1003,7 @@ groupZpackBoss
 			<item group="foodRotting" prob="0.9"/>
 			<item group="denimClothes" prob="0.9"/>
 			<item group="itemsMoney" prob="0.95"/>
-			<item group="ordinaryClothes" prob="0.9"/>
+			<item group="ordinaryClothes" prob="0.29"/>
 			<item group="meleeKnifes" prob="0.7"/>
 			<item group="meleeClubs" prob="0.7"/>
 			<item name="gunHandgunT1Pistol" prob="0.3"/>
@@ -1055,7 +1055,7 @@ groupZpackBoss
 			<item group="foodRotting" prob="0.9"/>
 			<item group="foodDrink" prob="0.9"/>
 			<item group="itemsMoney" prob="0.95"/>
-			<item group="ordinaryClothes" prob="0.8"/>
+			<item group="ordinaryClothes" prob="0.28"/>
 			<item group="meleeKnifes" prob="0.6"/>
 			<item group="meleeClubs" prob="0.6"/>
 			<item group="gunPistols" prob="0.2"/>
@@ -1070,7 +1070,7 @@ groupZpackBoss
 			<item group="foodRotting" prob="0.9"/>
 			<item group="foodDrink" prob="0.9"/>
 			<item group="itemsMoney" prob="0.95"/>
-			<item group="ordinaryClothes" prob="0.8"/>
+			<item group="ordinaryClothes" prob="0.28"/>
 			<item group="meleeKnifes" prob="0.7"/>
 			<item group="meleeClubs" prob="0.7"/>
 			<item group="gunPistols" prob="0.4"/>
@@ -1086,7 +1086,7 @@ groupZpackBoss
 			<item group="foodRotting" prob="0.9"/>
 			<item group="foodDrink" prob="0.9"/>
 			<item group="itemsMoney" prob="0.95"/>
-			<item group="ordinaryClothes" prob="0.8"/>
+			<item group="ordinaryClothes" prob="0.28"/>
 			<item group="meleeKnifes" prob="0.4"/>
 			<item group="meleeClubs" prob="0.5"/>
 			<item group="gunPistols" prob="0.5"/>
@@ -1142,7 +1142,7 @@ groupZpackBoss
 			<item group="foodHomeMade" prob="0.6"/>
 			<item group="foodAnimal" prob="0.8"/>
 			<item group="foodDrink" prob="0.6"/>
-			<item group="ordinaryClothes" prob="0.4"/>
+			<item group="ordinaryClothes" prob="0.24"/>
 			<item group="meleeKnifes" prob="0.1"/>
 			<item name="drinkJarCoffee" count="3" prob="0.05"/>
 		</lootcontainer>
@@ -1156,7 +1156,7 @@ groupZpackBoss
 			<item group="foodHomeMade" prob="0.5"/>
 			<item group="foodAnimal" prob="0.6"/>
 			<item group="foodDrink" prob="0.7"/>
-			<item group="ordinaryClothes" prob="0.4"/>
+			<item group="ordinaryClothes" prob="0.24"/>
 			<item group="meleeKnifes" prob="0.4"/>
 			<item name="drinkJarCoffee" count="4" prob="0.1"/>
 			<item group="groupZpackStrong" prob="0.3"/>
@@ -1171,7 +1171,7 @@ groupZpackBoss
 			<item group="foodHomeMade" prob="0.7"/>
 			<item group="foodAnimal" prob="0.4"/>
 			<item group="foodDrink" prob="0.8"/>
-			<item group="ordinaryClothes" prob="0.4"/>
+			<item group="ordinaryClothes" prob="0.24"/>
 			<item group="meleeKnifes" prob="0.6"/>
 			<item name="drinkJarCoffee" count="5" prob="0.2"/>
 			<item group="groupZpackBoss" prob="0.1"/>
@@ -1184,7 +1184,7 @@ groupZpackBoss
 			<item group="foodRotting" prob="0.9"/>
 			<item group="denimClothes" prob="0.9"/>
 			<item group="itemsMoney" prob="0.95"/>
-			<item group="ordinaryClothes" prob="0.9"/>
+			<item group="ordinaryClothes" prob="0.29"/>
 			<item group="ammo762mmBullets" prob="0.6"/>
 			<item name="gunRifleT1HuntingRifleParts" prob="0.3"/>
 			<item name="drugSkullCrushers" prob="0.05"/>
@@ -1197,7 +1197,7 @@ groupZpackBoss
 			<item group="foodRotting" prob="0.8"/>
 			<item group="denimClothes" prob="0.8"/>
 			<item group="itemsMoney" prob="0.95"/>
-			<item group="ordinaryClothes" prob="0.8"/>
+			<item group="ordinaryClothes" prob="0.28"/>
 			<item group="meleeKnifes" prob="0.6"/>
 			<item group="gunRifles" prob="0.5"/>
 			<item group="ammo762mmBullets" count="25" prob="0.6"/>
@@ -1212,7 +1212,7 @@ groupZpackBoss
 			<item group="foodRotting" prob="0.5"/>
 			<item group="denimClothes" prob="0.5"/>
 			<item group="itemsMoney" prob="0.95"/>
-			<item group="ordinaryClothes" prob="0.5"/>
+			<item group="ordinaryClothes" prob="0.25"/>
 			<item group="meleeKnifes" prob="0.9"/>
 			<item group="gunRifles" prob="0.8"/>
 			<item group="ammo762mmBullets" count="50" prob="0.9"/>
@@ -1358,7 +1358,7 @@ groupZpackBoss
 			<item group="foodHomeMade" prob="0.6"/>
 			<item group="foodAnimal" prob="0.8"/>
 			<item group="foodDrink" prob="0.6"/>
-			<item group="famaleClothes" prob="0.4"/>
+			<item group="famaleClothes" prob="0.24"/>
 			<item group="foodEnergy" prob="0.2"/>
 			<item group="meleeKnifes" prob="0.1"/>
 			<item name="drugSugarButts" prob="0.05"/>
@@ -1371,7 +1371,7 @@ groupZpackBoss
 			<item group="foodHomeMade" prob="0.7"/>
 			<item group="foodAnimal" prob="0.9"/>
 			<item group="foodDrink" prob="0.7"/>
-			<item group="famaleClothes" prob="0.6"/>
+			<item group="famaleClothes" prob="0.26"/>
 			<item group="foodEnergy" prob="0.3"/>
 			<item group="meleeKnifes" prob="0.3"/>
 			<item name="drugSugarButts" prob="0.1"/>
@@ -1383,7 +1383,7 @@ groupZpackBoss
 			<item group="junkNew" prob="0.1"/>
 			<item group="foodHomeMade" prob="0.7"/>
 			<item group="foodDrink" prob="0.6"/>
-			<item group="famaleClothes" prob="0.4"/>
+			<item group="famaleClothes" prob="0.24"/>
 			<item group="foodEnergy" prob="0.9"/>
 			<item group="meleeKnifes" prob="0.8"/>
 			<item name="drugSugarButts" prob="0.2"/>
@@ -1397,7 +1397,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.6"/>
 			<item group="foodNice" prob="0.3"/>
 			<item group="foodDrink" prob="0.3"/>
-			<item group="ordinaryClothes" prob="0.7"/>
+			<item group="ordinaryClothes" prob="0.27"/>
 			<item group="meleeSledgehammers" prob="0.2"/>
 			<item group="ammoShotgunBullets" prob="0.4"/>
 			<item group="gunShotguns" prob="0.05"/>
@@ -1411,7 +1411,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.5"/>
 			<item group="foodNice" prob="0.6"/>
 			<item group="foodDrink" prob="0.6"/>
-			<item group="ordinaryClothes" prob="0.4"/>
+			<item group="ordinaryClothes" prob="0.24"/>
 			<item group="meleeSledgehammers" prob="0.4"/>
 			<item group="gunShotguns" prob="0.3"/>
 			<item group="ammoShotgunBullets" prob="0.3"/>
@@ -1425,7 +1425,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.8"/>
 			<item group="foodNice" prob="0.5"/>
 			<item group="foodDrink" prob="0.5"/>
-			<item group="ordinaryClothes" prob="0.8"/>
+			<item group="ordinaryClothes" prob="0.28"/>
 			<item group="meleeSledgehammers" prob="0.5"/>
 			<item group="ammoShotgunBullets" prob="0.6"/>
 			<item group="gunShotguns" prob="0.08"/>
@@ -1490,7 +1490,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.5"/>
 			<item group="foodNice" prob="0.6"/>
 			<item group="foodDrink" prob="0.6"/>
-			<item group="ordinaryClothes" prob="0.5"/>
+			<item group="ordinaryClothes" prob="0.25"/>
 			<item group="meleeSledgehammers" prob="0.5"/>
 			<item group="gunShotguns" prob="0.1"/>
 			<item group="ammoShotgunBullets" prob="0.7"/>
@@ -1510,7 +1510,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.4"/>
 			<item group="foodNice" prob="0.7"/>
 			<item group="foodDrink" prob="0.7"/>
-			<item group="ordinaryClothes" prob="0.4"/>
+			<item group="ordinaryClothes" prob="0.24"/>
 			<item group="meleeSledgehammers" prob="0.4"/>
 			<item group="gunShotguns" prob="0.2"/>
 			<item group="ammoShotgunBullets" prob="0.8"/>
@@ -1529,7 +1529,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.6"/>
 			<item group="foodNice" prob="0.7"/>
 			<item group="foodDrink" prob="0.7"/>
-			<item group="ordinaryClothes" prob="0.3"/>
+			<item group="ordinaryClothes" prob="0.23"/>
 			<item group="meleeSledgehammers" prob="0.4"/>
 			<item group="gunShotguns" prob="0.3"/>
 			<item group="ammoShotgunBullets" prob="0.95"/>
@@ -1546,7 +1546,7 @@ groupZpackBoss
 			<item group="junkNew" prob="0.7"/>
 			<item group="foodRotting" prob="0.7"/>
 			<item group="foodEnergy" prob="0.3"/>
-			<item group="ordinaryClothes" prob="0.5"/>
+			<item group="ordinaryClothes" prob="0.25"/>
 			<item group="gunBows" prob="0.1"/>
 			<item group="ammoArrows" prob="0.1"/>
 			<item group="meleeClubs" prob="0.1"/>
@@ -1559,7 +1559,7 @@ groupZpackBoss
 			<item group="junkNew" prob="0.5"/>
 			<item group="foodRotting" prob="0.7"/>
 			<item group="foodEnergy" prob="0.3"/>
-			<item group="ordinaryClothes" prob="0.5"/>
+			<item group="ordinaryClothes" prob="0.25"/>
 			<item group="gunBows" prob="0.2"/>
 			<item group="ammoArrows" prob="0.2"/>
 			<item group="meleeClubs" prob="0.2"/>
@@ -1573,7 +1573,7 @@ groupZpackBoss
 			<item group="junkNew" prob="0.3"/>
 			<item group="foodRotting" prob="0.95"/>
 			<item group="foodEnergy" prob="0.6"/>
-			<item group="ordinaryClothes" prob="0.7"/>
+			<item group="ordinaryClothes" prob="0.27"/>
 			<item group="gunBows" prob="0.5"/>
 			<item group="ammoArrows" prob="0.5"/>
 			<item group="meleeClubs" prob="0.5"/>
@@ -1714,7 +1714,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.5"/>
 			<item group="foodNice" prob="0.6"/>
 			<item group="foodDrink" prob="0.6"/>
-			<item group="ordinaryClothes" prob="0.5"/>
+			<item group="ordinaryClothes" prob="0.25"/>
 			<item group="meleeSledgehammers" prob="0.5"/>
 			<item group="gunShotguns" prob="0.1"/>
 			<item group="ammoShotgunBullets" prob="0.3"/>
@@ -1734,7 +1734,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.6"/>
 			<item group="foodNice" prob="0.3"/>
 			<item group="foodDrink" prob="0.3"/>
-			<item group="ordinaryClothes" prob="0.5"/>
+			<item group="ordinaryClothes" prob="0.25"/>
 			<item group="meleeSledgehammers" prob="0.5"/>
 			<item group="gunShotguns" prob="0.5"/>
 			<item group="ammoShotgunBullets" prob="0.7"/>
@@ -1753,7 +1753,7 @@ groupZpackBoss
 			<item group="foodGoodCan" prob="0.2"/>
 			<item group="foodNice" prob="0.2"/>
 			<item group="foodDrink" prob="0.2"/>
-			<item group="ordinaryClothes" prob="0.5"/>
+			<item group="ordinaryClothes" prob="0.25"/>
 			<item group="meleeSledgehammers" prob="0.2"/>
 			<item group="gunShotguns" prob="0.8"/>
 			<item group="ammoShotgunBullets" prob="0.9"/>

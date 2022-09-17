@@ -1,0 +1,7 @@
+Key,english
+DFanimalFeed,Animal Feed
+animalFeedDesc,Used in crafting chicken coops and feeding the chickens after looting
+DFchickenCoop,Chicken Coop
+DFChickenCoopFull,Chicken Coop
+chickenCoopDesc,"Place this outside and wait for the eggs to hatch. Once looted, must be re-upgraded with animal feed (hold the feed in your hand and right-click on the block)"
+perkLivingOffTheLandRank1LongDesc,"Double the harvest of wild or planted crops. Craft seeds for flowers and decorative plants like goldenrod, chrysanthemum, aloe, and yucca.\nFarm plots cost 30% less to craft.\n\nUnlocks the chicken coop and animal feed recipes"
