@@ -1,0 +1,141 @@
+<configs>
+<append xpath="/gameevents">
+<!-- bait -->
+	<action_sequence name="actionGiveBaitGrub">
+		<action class="AddItems">
+			<property name="added_items" value="resourceBaitGrub" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveBaitDragonfly">
+		<action class="AddItems">
+			<property name="added_items" value="resourceBaitDragonfly" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveBaitButterfly">
+		<action class="AddItems">
+			<property name="added_items" value="resourceBaitButterfly" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveBaitGrasshopper">
+		<action class="AddItems">
+			<property name="added_items" value="resourceBaitGrasshopper" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveBaitSnail">
+		<action class="AddItems">
+			<property name="added_items" value="resourceBaitSnail" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+
+<!-- fish types -->
+	<action_sequence name="actionGiveBluegilFish">
+		<action class="AddItems">
+			<property name="added_items" value="resourceBluegilFish" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveCatfish">
+		<action class="AddItems">
+			<property name="added_items" value="resourceCatfish" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveCrab">
+		<action class="AddItems">
+			<property name="added_items" value="resourceCrab" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveCrappie">
+		<action class="AddItems">
+			<property name="added_items" value="resourceCrappie" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveGrouper">
+		<action class="AddItems">
+			<property name="added_items" value="resourceGrouper" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveLargeMouthBass">
+		<action class="AddItems">
+			<property name="added_items" value="resourceLargeMouthBass" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveMackerel">
+		<action class="AddItems">
+			<property name="added_items" value="resourceMackerel" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveOctopus">
+		<action class="AddItems">
+			<property name="added_items" value="resourceOctopus" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveRedSnapper">
+		<action class="AddItems">
+			<property name="added_items" value="resourceRedSnapper" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveShad">
+		<action class="AddItems">
+			<property name="added_items" value="resourceShad" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveShrimp">
+		<action class="AddItems">
+			<property name="added_items" value="resourceShrimp" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveStripedBass">
+		<action class="AddItems">
+			<property name="added_items" value="resourceStripedBass" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveTrout">
+		<action class="AddItems">
+			<property name="added_items" value="resourceTrout" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveTuna">
+		<action class="AddItems">
+			<property name="added_items" value="resourceTuna" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	
+<!-- junk -->
+	<action_sequence name="actionGiveFishingCoin">
+		<action class="AddItems">
+			<property name="added_items" value="resourceFishingCoin" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveSeaweed">
+		<action class="AddItems">
+			<property name="added_items" value="resourceSeaweed" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+	<action_sequence name="actionGiveOldBoot">
+		<action class="AddItems">
+			<property name="added_items" value="resourceOldBoot" />
+			<property name="added_item_counts" value="1" />
+		</action>
+	</action_sequence>
+</append>
+</configs>

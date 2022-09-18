@@ -249,7 +249,10 @@ groupZpackBoss
 			<item name="medicalSplint" prob="0.8"/>
 			<item name="drugPainkillers" prob="0.5"/>
 			<item name="drugVitamins" prob="0.3"/>
-			<item name="drugAntibiotics" prob="0.1"/>
+			<item name="drugAntibiotics" prob="0.1"/>			
+			<item name="resourceGauze" prob="0.3"/>
+			<item name="medicalAntibioticOintment" prob="0.3"/>
+			<item name="medicalBrace" prob="0.3"/>
 		</lootgroup>
 		
 		<!-- Currency (ducs/dollars) -->
@@ -688,7 +691,7 @@ groupZpackBoss
 		<!-- zombieNurse -->
 		<lootcontainer id="219" name="zombieNurse" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.7"/>
-			<item group="foodMeds" prob="0.5"/>
+			<item group="foodMeds" prob="0.7"/>
 			<item group="ordinaryClothes" prob="0.225"/>
 			<item group="famaleClothes" prob="0.225"/>
 			<item name="plantedAloe1" count="1,3" prob="0.6"/>
@@ -700,13 +703,14 @@ groupZpackBoss
 		<!-- zombieNurseFeral -->
 		<lootcontainer id="220" name="zombieNurseFeral" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.3"/>
-			<item group="foodMeds" prob="0.7"/>
+			<item group="foodMeds" prob="0.8"/>
 			<item group="ordinaryClothes" prob="0.225"/>
 			<item group="famaleClothes" prob="0.225"/>
 			<item name="plantedAloe1" count="3,7" prob="0.5"/>
 			<item name="plantedGoldenrod1" prob="0.5"/>
 			<item name="medicalAloeCream" prob="0.5"/>
 			<item name="drugHealthBar" count="2,4" prob="0.3"/>
+			<item name="medicalFirstAidKitTraumaSchematic" prob="0.2"/>
 			<item group="groupZpackStrong" prob="0.3"/>
 		</lootcontainer>
 		
@@ -720,6 +724,7 @@ groupZpackBoss
 			<item name="plantedGoldenrod1" prob="0.7"/>
 			<item name="medicalAloeCream" prob="0.7"/>
 			<item name="drugHealthBar" count="2,4" prob="0.5"/>
+			<item name="medicalFirstAidKitTraumaSchematic" prob="0.4"/>
 			<item group="groupZpackBoss" prob="0.2"/>
 		</lootcontainer>
 		
@@ -1223,23 +1228,23 @@ groupZpackBoss
 		<!-- zombieUtilityWorker -->
 		<lootcontainer id="258" name="zombieUtilityWorker" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.5"/>
-			<item name="drinkJarBeer" prob="0.7"/>
-			<item name="foodShamSandwich" prob="0.9"/>
-			<item group="itemsMoney" prob="0.95"/>
-			<item group="workerClothes" prob="0.8"/>
-			<item group="meleeRepairs" prob="0.5"/>
-			<item group="meleeKnifes" prob="0.3"/>
+			<item name="drinkJarBeer" prob="0.5"/>
+			<item name="foodShamSandwich" prob="0.5"/>
+			<item group="itemsMoney" prob="0.55"/>
+			<item group="workerClothes" prob="0.5"/>
+			<item group="meleeRepairs" prob="0.8"/>
+			<item group="meleeKnifes" prob="0.1"/>
 			<item group="ammoGrenades" prob="0.1"/>
 		</lootcontainer>
 		
 		<!-- zombieUtilityWorkerFeral -->
 		<lootcontainer id="259" name="zombieUtilityWorkerFeral" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.3"/>
-			<item name="drinkJarBeer" prob="0.7"/>
+			<item name="drinkJarBeer" prob="0.5"/>
 			<item name="foodShamSandwich" prob="0.9"/>
 			<item group="itemsMoney" prob="0.95"/>
-			<item group="workerClothes" prob="0.8"/>
-			<item group="meleeRepairs" prob="0.6"/>
+			<item group="workerClothes" prob="0.4"/>
+			<item group="meleeRepairs" prob="0.95"/>
 			<item group="meleeKnifes" prob="0.4"/>
 			<item group="ammoGrenades" prob="0.2"/>
 			<item group="groupZpackStrong" prob="0.3"/>
@@ -1248,10 +1253,10 @@ groupZpackBoss
 		<!-- zombieUtilityWorkerRadiated-->
 		<lootcontainer id="260" name="zombieUtilityWorkerRadiated" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="junkNew" prob="0.1"/>
-			<item name="drinkJarBeer" prob="0.9"/>
-			<item name="foodShamSandwich" prob="0.95"/>
+			<item name="drinkJarBeer" prob="0.4"/>
+			<item name="foodShamSandwich" prob="0.45"/>
 			<item group="workerClothes" prob="0.95"/>
-			<item group="meleeRepairs" prob="0.85"/>
+			<item group="meleeRepairs" prob="0.95"/>
 			<item group="meleeKnifes" prob="0.65"/>
 			<item group="ammoGrenades" prob="0.55"/>
 			<item group="groupZpackBoss" prob="0.3"/>

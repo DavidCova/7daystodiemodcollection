@@ -1,0 +1,771 @@
+<configs>
+<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+	<effect_group name="Adds Fishing">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishingMaster" target="self"/>
+	</effect_group>
+</append>
+<append xpath="/buffs">
+<!-- fishing -->
+<buff name="buffFishingMaster" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Tier Increase for Crafting">
+			<passive_effect name="CraftingTier" operation="base_set" value="1" tags="FishingMasterPerks">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="CraftingTier" operation="base_set" value="3" tags="FishingMasterPerks">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="Equals" value="1"/>
+			</passive_effect>
+			<passive_effect name="CraftingTier" operation="base_set" value="4" tags="FishingMasterPerks">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="Equals" value="2"/>
+			</passive_effect>
+			<passive_effect name="CraftingTier" operation="base_set" value="6" tags="FishingMasterPerks">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group name="Allow Harvesting with Perks">
+			<passive_effect name="HarvestCount" operation="base_set" value="1" tags="FishingBaitHarvestT1">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="Equals" value="1"/>
+			</passive_effect>
+			<passive_effect name="HarvestCount" operation="base_set" value="1" tags="FishingBaitHarvestT2">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="Equals" value="2"/>
+			</passive_effect>
+			<passive_effect name="HarvestCount" operation="base_set" value="1" tags="FishingBaitHarvestT3">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group name="Reset on Relog and Death">
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="FishingCatchChance" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffFishingCast"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffFishingCatch"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffFishingComplete"/>
+			
+			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="FishingCatchChance" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="FishingBaitedCatchChance" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffFishingCast"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffFishingCatch"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffFishingComplete"/>
+			
+			<triggered_effect trigger="onSelfRespawn" action="ModifyCVar" cvar="FishingCatchChance" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfRespawn" action="ModifyCVar" cvar="FishingBaitedCatchChance" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffFishingCast"/>
+			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffFishingCatch"/>
+			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffFishingComplete"/>
+		</effect_group>
+		<effect_group name="Allows Fishing when Wet">
+				<requirement name="CVarCompare" cvar="_wetness" operation="GT" value=".05"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishableWaterReady" target="self"/>
+		</effect_group>
+		<effect_group name="Unlock Recipes: Knifes">
+			<requirement name="HoldingItemHasTags" tags="knife"/>
+			<!--
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishingRecipesUnlockedKnife" target="self"/>-->
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" tags="resourceRawBluegilFishFillet,resourceRawCatfishFillet,resourceRawCrappieFillet,resourceRawGrouperFillet,resourceRawLargeMouthBassFillet,resourceRawMackerelFillet,resourceRawRedSnapperFillet,resourceRawStripedBassFillet,resourceRawTroutFillet,resourceRawTunaFillet,resourceRawShadRoe"/>
+		
+		</effect_group>
+		<effect_group name="Radiate to Fishable Boats">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffEntityIsBoat" target="selfAOE" range="1.2" target_tags="fish"/>
+		</effect_group>
+		<effect_group name="Trigger Game Events: Bug Catching">
+			<requirement name="HoldingItemHasTags" tags="bugnet"/>
+				<triggered_effect trigger="onSelfKilledOther" action="CallGameEvent" event="actionGiveBaitGrub">
+					<requirement name="EntityTagCompare" tags="baitgrub" target="other"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="CallGameEvent" event="actionGiveBaitDragonfly">
+					<requirement name="EntityTagCompare" tags="baitdragonfly" target="other"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="CallGameEvent" event="actionGiveBaitGrasshopper">
+					<requirement name="EntityTagCompare" tags="baitgrasshopper" target="other"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="CallGameEvent" event="actionGiveBaitButterfly">
+					<requirement name="EntityTagCompare" tags="baitbutterfly" target="other"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="CallGameEvent" event="actionGiveBaitSnail">
+					<requirement name="EntityTagCompare" tags="baitsnail" target="other"/>
+				</triggered_effect>
+		</effect_group>
+		<effect_group name="Radiate to Bait for Sound">
+			<requirement name="HasBuff" buff="buffCrouching"/>
+			<requirement name="HoldingItemHasTags" tags="bugnet"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffNPCBaitSound" target="selfAOE" range="65" target_tags="fishingbait"/>
+		</effect_group>
+		<effect_group name="Add Journal Tip">
+			<requirement name="PlayerItemCount" item_name="resourceBaitWorm" operation="GTE" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="journalFishingTutorialV2"/>
+		</effect_group>
+	</buff>
+
+<buff name="buffFishableWaterReadyTrigger" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="2"/>
+		<update_rate value="1" />
+		<effect_group name="Trigger Buff">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishableWaterReady" target="self"/>	
+		</effect_group>
+	</buff>
+<buff name="buffFishableWaterReady" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="1"/>
+		<effect_group name="Empty to Allow Cast">
+		
+		</effect_group>
+	</buff>
+
+	
+<buff name="buffFishingCast" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<update_rate value="3" />
+		<effect_group name="Set CVars">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="set" value="4"/>
+			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="6">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="16">
+				<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>
+			</triggered_effect>
+			
+			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="@FishingBaitedCatchChance"/>
+		</effect_group>
+		<effect_group name="Attaches">
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?FishBobberPrefab" local_offset="0,.05,2.25" parent_transform="Global"/>				
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+		</effect_group>
+		<effect_group name="Chance to Catch Fish">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,300" operation="LTE" value="@FishingCatchChance"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishingCatch" target="self"/>
+		</effect_group>
+		<effect_group name="Slow Walk">
+			<passive_effect name="RunSpeed" operation="perc_add" value="-.5"/>
+			<passive_effect name="WalkSpeed" operation="perc_add" value="-.5"/>
+			<passive_effect name="CrouchSpeed" operation="perc_add" value="-.5"/>
+		</effect_group>
+	</buff>
+<buff name="buffFishingCatch" name_key="buffFishingCatchName" description_key="buffFishingCatchDesc" icon="ui_game_symbol_FishCaughtIcon">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<display_value value="FishingCatchTrigger"/>
+		<display_value_key value="{0}"/>
+		<update_rate value=".5" />
+		<effect_group name="Set CVars">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchTrigger" operation="set" value="randomint(20,50)"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="FishingCatchTrigger" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="FishingCatchTrigger" operation="set" value="0"/>
+		</effect_group>
+		<effect_group name="Chance to Consume Bait">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@FishingBaitConsumeChance"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffFishingBaited" target="self"/>
+		</effect_group>	
+		<effect_group name="Remove if Failed">
+			<requirement name="CVarCompare" cvar="FishingCatchTrigger" operation="LTE" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishingFail" target="self"/>
+		</effect_group>
+		<effect_group name="Add Fish Caught Buff">
+			<requirement name="CVarCompare" cvar="FishingCatchTrigger" operation="GTE" value="100"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishingComplete" target="self"/>
+		</effect_group>
+		<effect_group name="Fish Tug CVars">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="FishingCatchTrigger" operation="subtract" value="randomint(1,6)"/>
+		</effect_group>	
+		<effect_group name="Play Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="FishingCaught" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="FishingCaught" play_in_head="true">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Shake Camera">
+			<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="0.75" shake_amplitude="40" shake_time="-1"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="1"/>
+		</effect_group>
+		<effect_group name="Remove All Prefabs if Finished or Removed.">
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffFishingCast" target="self"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffFishingCast" target="self"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffFishingCast" target="self"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffFishingCatch" target="self"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffFishingCatch" target="self"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffFishingCatch" target="self"/>
+		</effect_group>
+	</buff>
+<buff name="buffFishingFail" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="2"/>
+		<effect_group name="Play Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="password_fail" play_in_head="true"/>
+		</effect_group>		
+		<effect_group name="Remove Fishing">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffFishingCatch" target="self"/>
+		</effect_group>
+		<effect_group name="Consume Bait">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffFishingBaited" target="self"/>
+		</effect_group>
+	</buff>
+<buff name="buffFishingComplete" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="2"/>	
+		<effect_group name="Set CVars">
+		
+		</effect_group>
+		<effect_group name="Fishing Complete: Snow">
+			<requirement name="InBiome" biome="1"/>					
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="1">
+					<requirement name="IsDay"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="74"/>
+				</triggered_effect>						
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="51">
+					<requirement name="IsNight"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="74"/>
+				</triggered_effect>		
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(101,103)">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="75"/>
+				</triggered_effect>
+
+	<!-- daytime -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveBluegilFish">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="1" />
+				</triggered_effect>
+				
+	<!-- nighttime -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveStripedBass">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="51" />
+				</triggered_effect>
+				
+	<!-- junk -->		
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveFishingCoin">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="101" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveSeaweed">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="102" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveOldBoot">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="103" />
+				</triggered_effect>
+		</effect_group>
+		<effect_group name="Fishing Complete: Pine Forest">
+			<requirement name="InBiome" biome="3"/>					
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(1,2)">
+					<requirement name="IsDay"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="74"/>
+				</triggered_effect>						
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(51,52)">
+					<requirement name="IsNight"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="74"/>
+				</triggered_effect>		
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(101,103)">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="75"/>
+				</triggered_effect>
+
+	<!-- daytime -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveCrappie">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="1" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveCrab">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="2" />
+				</triggered_effect>
+				
+	<!-- nighttime -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveCrappie">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="51" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveCatfish">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="52" />
+				</triggered_effect>
+		
+	<!-- junk -->		
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveFishingCoin">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="101" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveSeaweed">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="102" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveOldBoot">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="103" />
+				</triggered_effect>
+		</effect_group>
+		<effect_group name="Fishing Complete: Desert">
+			<requirement name="InBiome" biome="5"/>					
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(1,3)">
+					<requirement name="IsDay"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="74"/>
+				</triggered_effect>						
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(51,52)">
+					<requirement name="IsNight"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="74"/>
+				</triggered_effect>		
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(101,103)">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="75"/>
+				</triggered_effect>
+
+	<!-- daytime -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveRedSnapper">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="1" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveLargeMouthBass">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="2" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveShrimp">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="3" />
+				</triggered_effect>
+				
+	<!-- nighttime -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveGrouper">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="51" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveLargeMouthBass">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="52" />
+				</triggered_effect>
+		
+	<!-- junk -->		
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveFishingCoin">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="101" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveSeaweed">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="102" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveOldBoot">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="103" />
+				</triggered_effect>
+		</effect_group>
+		<effect_group name="Fishing Complete: Wasteland">
+			<requirement name="InBiome" biome="8"/>					
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(1,3)">
+					<requirement name="IsDay"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="74"/>
+				</triggered_effect>						
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(51,54)">
+					<requirement name="IsNight"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="74"/>
+				</triggered_effect>		
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishTypeCaught" operation="set" value="randomint(101,103)">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="75"/>
+				</triggered_effect>
+
+	<!-- daytime -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveOctopus">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="1" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveMackerel">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="2" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveTrout">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="3" />
+				</triggered_effect>
+				
+	<!-- nighttime -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveShad">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="51" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveMackerel">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="52" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveTrout">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="53" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveTuna">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="54" />
+				</triggered_effect>
+	
+	<!-- junk -->		
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveFishingCoin">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="101" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveSeaweed">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="102" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="actionGiveOldBoot">
+					<requirement name="CVarCompare" cvar="FishTypeCaught" operation="Equals" value="103" />
+				</triggered_effect>
+		</effect_group>
+		<effect_group name="Play Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="FishingComplete" play_in_head="true"/>
+		</effect_group>	
+		<effect_group name="Remove Fishing">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffFishingCatch" target="self"/>
+		</effect_group>
+	</buff>	
+<buff name="buffFishingBaited" name_key="buffFishingBaitedName" description_key="buffFishingBaitedDesc" icon="ui_game_symbol_Earthworm2Icon">
+		<stack_type value="replace"/>
+		<duration value="0"/>	
+		<display_value value="FishingBaitedCatchChance"/>
+		<display_value_key value="+ {0}%"/>
+		<effect_group name="Reset When Finished">
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="FishingBaitedCatchChance" operation="set" value="0"/>
+			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="FishingBaitConsumeChance" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+
+<!-- entity buffs -->
+<buff name="buffNPCGrubStart"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Grub Death Attach">				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCGrubWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCGrubIdlePrefab"/>
+				<!--
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrubDeathPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/> -->
+				
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffNPCGrubStart" target="self"/>
+		</effect_group>
+		<effect_group name="Grub Walk Attach">
+			<requirement name="EntityHasMovementTag" tags="walking"/>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCGrubIdlePrefab"/>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrubWalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrubWalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCGrubWalkPrefab"/>
+		</effect_group>
+		<effect_group name="Grub Idle Attach">
+			<requirement name="!EntityHasMovementTag" tags="walking"/>		
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCGrubWalkPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrubIdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrubIdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCGrubIdlePrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffNPCGrasshopperStart"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Grasshopper Death Attach">				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCGrasshopperWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCGrasshopperIdlePrefab"/>
+				<!--
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrasshopperDeathPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/> -->
+				
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffNPCGrasshopperStart" target="self"/>
+		</effect_group>
+		<effect_group name="Grasshopper Walk Attach">
+			<requirement name="EntityHasMovementTag" tags="walking"/>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCGrasshopperIdlePrefab"/>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrasshopperWalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrasshopperWalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCGrasshopperWalkPrefab"/>
+		</effect_group>
+		<effect_group name="Grasshopper Idle Attach">
+			<requirement name="!EntityHasMovementTag" tags="walking"/>		
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCGrasshopperWalkPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrasshopperIdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCGrasshopperIdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCGrasshopperIdlePrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffNPCSnailStart"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Snail Death Attach">				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCSnailWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCSnailIdlePrefab"/>
+				<!--
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCSnailDeathPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/> -->
+				
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffNPCSnailStart" target="self"/>
+		</effect_group>
+		<effect_group name="Snail Walk Attach">
+			<requirement name="EntityHasMovementTag" tags="walking"/>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCSnailIdlePrefab"/>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCSnailWalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCSnailWalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCSnailWalkPrefab"/>
+		</effect_group>
+		<effect_group name="Snail Idle Attach">
+			<requirement name="!EntityHasMovementTag" tags="walking"/>		
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCSnailWalkPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCSnailIdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCSnailIdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCSnailIdlePrefab"/>
+		</effect_group>
+	</buff>
+
+<buff name="buffNPCDragonflyStart"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Dragonfly Death Attach">				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCDragonflyWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCDragonflyIdlePrefab"/>
+				<!--
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCDragonflyDeathPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/> -->
+				
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffNPCDragonflyStart" target="self"/>
+		</effect_group>
+		<effect_group name="Dragonfly Walk Attach">
+			<requirement name="EntityHasMovementTag" tags="walking"/>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCDragonflyIdlePrefab"/>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCDragonflyWalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCDragonflyWalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCDragonflyWalkPrefab"/>
+		</effect_group>
+		<effect_group name="Dragonfly Idle Attach">
+			<requirement name="!EntityHasMovementTag" tags="walking"/>		
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCDragonflyWalkPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCDragonflyIdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCDragonflyIdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCDragonflyIdlePrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffNPCButterfly01Start"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Butterfly01 Death Attach">				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCButterfly01WalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCButterfly01IdlePrefab"/>
+				<!--
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly01DeathPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/> -->
+				
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffNPCButterfly01Start" target="self"/>
+		</effect_group>
+		<effect_group name="Butterfly01 Walk Attach">
+			<requirement name="EntityHasMovementTag" tags="walking"/>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCButterfly01IdlePrefab"/>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly01WalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly01WalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCButterfly01WalkPrefab"/>
+		</effect_group>
+		<effect_group name="Butterfly01 Idle Attach">
+			<requirement name="!EntityHasMovementTag" tags="walking"/>		
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCButterfly01WalkPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly01IdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly01IdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCButterfly01IdlePrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffNPCButterfly02Start"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Butterfly02 Death Attach">				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCButterfly02WalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCButterfly02IdlePrefab"/>
+				<!--
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly02DeathPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/> -->
+				
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffNPCButterfly02Start" target="self"/>
+		</effect_group>
+		<effect_group name="Butterfly02 Walk Attach">
+			<requirement name="EntityHasMovementTag" tags="walking"/>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCButterfly02IdlePrefab"/>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly02WalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly02WalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCButterfly02WalkPrefab"/>
+		</effect_group>
+		<effect_group name="Butterfly02 Idle Attach">
+			<requirement name="!EntityHasMovementTag" tags="walking"/>		
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCButterfly02WalkPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly02IdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly02IdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCButterfly02IdlePrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffNPCButterfly03Start"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Butterfly03 Death Attach">				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCButterfly03WalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="NPCButterfly03IdlePrefab"/>
+				<!--
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly03DeathPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/> -->
+				
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffNPCButterfly03Start" target="self"/>
+		</effect_group>
+		<effect_group name="Butterfly03 Walk Attach">
+			<requirement name="EntityHasMovementTag" tags="walking"/>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCButterfly03IdlePrefab"/>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly03WalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly03WalkPrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCButterfly03WalkPrefab"/>
+		</effect_group>
+		<effect_group name="Butterfly03 Idle Attach">
+			<requirement name="!EntityHasMovementTag" tags="walking"/>		
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" prefab="NPCButterfly03WalkPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly03IdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishingV2A20.unity3d?NPCButterfly03IdlePrefab" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Global"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="NPCButterfly03IdlePrefab"/>
+		</effect_group>
+	</buff>
+
+<!-- food buffs -->
+<buff name="buffFriedShadRoeandBacon" name_key="buffFriedShadRoeandBaconName" description_key="buffFriedShadRoeandBaconDesc" icon="ui_game_symbol_ShadRoeAndBaconIcon">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<update_rate value="1" />
+		<display_value value="FriedShadRoeandBaconTimer"/>
+		<display_value_format value="time"/>
+		<effect_group name="Set Cvars">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="FriedShadRoeandBaconTimer" operation="subtract" value="1"/>
+		</effect_group>
+		<effect_group name="Remove Buffs">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFriedShadRoeandBacon">
+				<requirement name="CVarCompare" cvar="FriedShadRoeandBaconTimer" operation="LTE" value="0"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Effects">
+			<passive_effect name="HealthMax" operation="perc_add" value=".5"/>
+			<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attFortitude"/>
+		</effect_group>
+	</buff>
+<buff name="buffFriedTrout" name_key="buffFriedTroutName" description_key="buffFriedTroutDesc" icon="ui_game_symbol_FriedTroutIcon">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<update_rate value="1" />
+		<display_value value="FriedTroutTimer"/>
+		<display_value_format value="time"/>
+		<effect_group name="Set Cvars">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="FriedTroutTimer" operation="subtract" value="1"/>
+		</effect_group>
+		<effect_group name="Remove Buffs">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFriedTrout">
+				<requirement name="CVarCompare" cvar="FriedTroutTimer" operation="LTE" value="0"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Effects">
+			<passive_effect name="StaminaMax" operation="perc_add" value=".5"/>
+			<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attAgility"/>
+		</effect_group>
+	</buff>
+<buff name="buffFriedCatfish" name_key="buffFriedCatfishName" description_key="buffFriedCatfishDesc" icon="ui_game_symbol_FriedCatfishIcon">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<update_rate value="1" />
+		<display_value value="FriedCatfishTimer"/>
+		<display_value_format value="time"/>
+		<effect_group name="Set Cvars">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="FriedCatfishTimer" operation="subtract" value="1"/>
+		</effect_group>
+		<effect_group name="Remove Buffs">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFriedCatfish">
+				<requirement name="CVarCompare" cvar="FriedCatfishTimer" operation="LTE" value="0"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Effects">
+			<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attIntellect"/>
+			<passive_effect name="BarteringBuying" operation="base_add" value=".15"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".15"/>
+		</effect_group>
+	</buff>
+<buff name="buffMarinatedTunaSteak" name_key="buffMarinatedTunaSteakName" description_key="buffMarinatedTunaSteakDesc" icon="ui_game_symbol_MarinatedTunaSteakIcon">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<update_rate value="1" />
+		<display_value value="MarinatedTunaSteakTimer"/>
+		<display_value_format value="time"/>
+		<effect_group name="Set Cvars">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MarinatedTunaSteakTimer" operation="subtract" value="1"/>
+		</effect_group>
+		<effect_group name="Remove Buffs">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffMarinatedTunaSteak">
+				<requirement name="CVarCompare" cvar="MarinatedTunaSteakTimer" operation="LTE" value="0"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Effects">
+			<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attStrength"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value=".25" tags="melee"/>
+		</effect_group>
+	</buff>
+<buff name="buffRoastedGrouper" name_key="buffRoastedGrouperName" description_key="buffRoastedGrouperDesc" icon="ui_game_symbol_RoastedGrouperIcon">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<update_rate value="1" />
+		<display_value value="RoastedGrouperTimer"/>
+		<display_value_format value="time"/>
+		<effect_group name="Set Cvars">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RoastedGrouperTimer" operation="subtract" value="1"/>
+		</effect_group>
+		<effect_group name="Remove Buffs">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRoastedGrouper">
+				<requirement name="CVarCompare" cvar="RoastedGrouperTimer" operation="LTE" value="0"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Effects">
+			<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attPerception"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value=".25" tags="ranged"/>
+		</effect_group>
+	</buff>
+
+<!-- utility buffs -->
+<buff name="buffEntityIsBoat" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="1.5"/>	
+		<update_rate value=".25" />
+		<effect_group name="Radiates Fishable to Player">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishableWaterReady" target="selfAOE" target_tags="player" range="2.5"/>
+		</effect_group>
+	</buff>
+<buff name="buffNPCBaitSound"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<update_rate value="10" />
+		<effect_group name="Play Sounds: Grub">
+			<requirement name="EntityTagCompare" tags="baitgrub"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>		
+		</effect_group>
+		<effect_group name="Play Sounds: Grasshopper">
+			<requirement name="EntityTagCompare" tags="baitgrasshopper"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>		
+		</effect_group>
+		<effect_group name="Play Sounds: Snail">
+			<requirement name="EntityTagCompare" tags="baitsnail"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>		
+		</effect_group>
+		<effect_group name="Play Sounds: Dragonfly">
+			<requirement name="EntityTagCompare" tags="baitdragonfly"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>		
+		</effect_group>
+		<effect_group name="Play Sounds: Butterfly">
+			<requirement name="EntityTagCompare" tags="baitbutterfly"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="SoundEffectGrasshopperRandom"/>		
+		</effect_group>
+	</buff>
+<buff name="buffFishingDecoyKill"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".5" />
+		<effect_group name="Kill">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="500"/>	
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="500"/>		
+		</effect_group>
+	</buff>
+
+</append>
+
+</configs>

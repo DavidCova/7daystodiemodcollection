@@ -266,6 +266,7 @@
 	<!-- Telric's fishing -->
 	<append xpath="/items/item[@name='foodGrilledFishFillet']/effect_group">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="20"/>
 	</append>
 	<append xpath="/items/item[@name='foodMarinatedTunaSteak']/effect_group">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="60"/>
