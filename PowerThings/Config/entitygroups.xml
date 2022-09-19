@@ -1,0 +1,9 @@
+<Arramus>
+<append xpath="/entitygroups">
+	<entitygroup name="ArramusRocks">
+		<entity name="animalRockSpawn" prob="0.4"/>
+		<entity name="animalBlueSpawn" prob="0.4"/>
+	</entitygroup>
+</append>
+
+</Arramus>

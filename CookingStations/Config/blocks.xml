@@ -1,0 +1,386 @@
+<configs>
+	<append xpath="/blocks">
+
+<block name="OaksCooker">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="DescriptionKey" value="OaksCookerDesc"/>	
+	<property name="CustomIcon" value="cookerbigoak"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?CookerBigoak"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?CookerFX"/>
+	<property name="ParticleOffset" value="0,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+<block name="PotStove">
+    <property name="Extends" value="OaksCooker"/>
+	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="CustomIcon" value="potstove"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?PotStove"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?potstoveFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="OaksCooker"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+<block name="IronStove">
+    <property name="Extends" value="OaksCooker"/>
+	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="CustomIcon" value="ironstove"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?Ironstove"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?IronstoveFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="OaksCooker"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+<block name="StoneStove">
+    <property name="Extends" value="OaksCooker"/>
+	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="CustomIcon" value="stonestove"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?StoneStove"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?StoneStoveFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="OaksCooker"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+
+<block name="RedMixer">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="CustomIcon" value="redmixer"/>
+	<property name="DescriptionKey" value="RedMixerDesc"/>	
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Blenders.unity3d?RedMixer2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Blenders.unity3d?BladeFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.55"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="cement_mixer_open"/>
+	<property name="CloseSound" value="cement_mixer_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+<block name="GreenMixer">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="CustomIcon" value="greenmixer"/>
+	<property name="DescriptionKey" value="GreenMixerDesc"/>	
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Blenders.unity3d?GreenMixer"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Blenders.unity3d?BladeFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.55"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="RedMixer"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="cement_mixer_open"/>
+	<property name="CloseSound" value="cement_mixer_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+<block name="SilverBlender">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="CustomIcon" value="silverblender"/>
+	<property name="DescriptionKey" value="SilverBlenderDesc"/>	
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Blenders.unity3d?BlenderSilver"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Blenders.unity3d?BlenderFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="cement_mixer_open"/>
+	<property name="CloseSound" value="cement_mixer_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+<block name="GreenBlender">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="CustomIcon" value="greenblender"/>
+	<property name="DescriptionKey" value="GreenBlenderDesc"/>	
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Blenders.unity3d?BlenderGreen"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Blenders.unity3d?Blender2FX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="SilverBlender"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="cement_mixer_open"/>
+	<property name="CloseSound" value="cement_mixer_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+<block name="MeatGrinder">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="CustomIcon" value="meatgrinder"/>
+	<property name="DescriptionKey" value="MeatGrinderDesc"/>	
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Blenders.unity3d?MeatGrinder"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Blenders.unity3d?ConnectionShaft1"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+	
+
+	<property class="Workstation">
+		<property name="Modules" value="output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="cement_mixer_open"/>
+	<property name="CloseSound" value="cement_mixer_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+</append>
+
+</configs>

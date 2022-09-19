@@ -1,0 +1,16 @@
+<xml>		
+
+		<!-- Mastergod fix -->
+		<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@level='2,3']/@tags">,HydroponicWorkBench,HydroponicFarmBlock,Compost,HydroponicFeed,HydroponicYuccaSeedling,HydroponicCornSeedling,HydroponicPotatoSeedling,HydroponicCoffeeSeedling,HydroponicGoldenrodSeedling,HydroponicChrysanthemumSeedling,HydroponicHopSeedling,HydroponicPumpkinSeedling,HydroponicBlueberrySeedling,HydroponicJalapenoSeedling,HydroponicPepperSeedling,HydroponicTomatoSeedling,HydroponicTurnipSeedling,HydroponicEggplantSeedling,HydroponicStrawberrySeedling,HydroponicPineappleSeedling</append>
+
+		<append xpath="/progression/perks/perk[@name='perkMasterChef']">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1"
+					tags=",foodHydroponicMixedVegetableSoup,foodHydroponicMixedFruitBowl,foodHydroponicFruitMuffin"/>		
+			</effect_group>
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
+					tags=",foodHydroponicSalmonBake"/>		
+			</effect_group>			
+		</append>
+</xml>

@@ -1,0 +1,10 @@
+<Arramus>
+<append xpath="/entitygroups">
+	<entitygroup name="BeeLog">
+		<entity name="animalBeeStump" prob="0.1"/>
+		<entity name="animalBeeStump2" prob="0.1"/>
+		<entity name="animalBeeStump3" prob="0.1"/>
+	</entitygroup>
+</append>
+
+</Arramus>

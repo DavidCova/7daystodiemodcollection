@@ -1,0 +1,36 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+BeeStump,blocks,Block,,,Bee Stump (Chop),,,,,,,,,,,,,
+BeeStump2,blocks,Block,,,Bee Stump (Chop),,,,,,,,,,,,,
+BeeStump3,blocks,Block,,,Bee Stump (Chop),,,,,,,,,,,,,
+
+QueenBee,items,Item,,,Queen Bee,,,,,,,,,,,,,
+QueenBeeDesc,items,Item,,,"Use the Queen Bee with right mouse click on the Bee Hive to populate it and produce honey.",,,,,,,,,,,,,
+
+SquareHiveEmpty,blocks,Block,,,Empty Square Bee Hive (Needs a Queen Bee),,,,,,,,,,,,,
+SquareHiveEmptyDesc,blocks,Block,,,"Introduce a Queen Bee to the Bee Hive and over time it will produce honey. A Queen Bee can be found in a special log in the Pine Forest. Chop the log and there is a 30% chance to find a Queen Bee inside.",,,,,,,,,,,,,
+SquareBeeHiveQueen,blocks,Block,,,[66ff00]Bees are collecting Nectar,,,,,,,,,,,,,
+SquareHiveWithHoney,blocks,Block,,,[66ff00]Honey is Ready to Collect,,,,,,,,,,,,,
+
+BeeHiveEmpty,blocks,Block,,,Empty Square Bee Hive (Needs a Queen Bee),,,,,,,,,,,,,
+BeeHiveEmptyDesc,blocks,Block,,,"Introduce a Queen Bee to the Bee Hive and over time it will produce honey. A Queen Bee can be found in a special log in the Pine Forest. Chop the log and there is a 30% chance to find a Queen Bee inside.",,,,,,,,,,,,,
+BeeHiveQueen,blocks,Block,,,[66ff00]Bees are collecting Nectar,,,,,,,,,,,,,
+BeeHiveWithHoney,blocks,Block,,,[66ff00]Honey is Ready to Collect,,,,,,,,,,,,,
+
+WoodBeeHiveEmpty,blocks,Block,,,Empty Square Bee Hive (Needs a Queen Bee),,,,,,,,,,,,,
+WoodBeeHiveEmptyDesc,blocks,Block,,,"Introduce a Queen Bee to the Bee Hive and over time it will produce honey. A Queen Bee can be found in a special log in the Pine Forest. Chop the log and there is a 30% chance to find a Queen Bee inside.",,,,,,,,,,,,,
+WoodBeeHiveQueen,blocks,Block,,,[66ff00]Bees are collecting Nectar,,,,,,,,,,,,,
+WoodBeeHiveWithHoney,blocks,Block,,,[66ff00]Honey is Ready to Collect,,,,,,,,,,,,,
+
+HoneyComb,items,Item,,,Honey Comb,,,,,,,,,,,,,
+HoneyCombDesc,items,Item,,,"Use the Honey Comb as a standalone snack or as part of a recipe. Provides healing properties. Cures 2% infection.",,,,,,,,,,,,,
+
+foodHoneyBread,items,Food,,,Honey Bread,,,,,,,,,,,,,
+foodHoneyBreadDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.",,,,,,,,,,,,,
+
+foodHoneyPumpkinPie,items,Food,,,Honey Pumpkin Pie,,,,,,,,,,,,,
+foodHoneyPumpkinPieDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.",,,,,,,,,,,,,
+
+drinkHoneyBeer,items,Food,,,Honey Beer,,,,,,,,,,,,,
+drinkHoneyBeerDesc,items,Food,,,"Puts a spring in your step, power in your punch, and provides healing properties. Cures 3% infection.",,,,,,,,,,,,,
+
