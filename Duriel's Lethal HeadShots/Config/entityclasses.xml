@@ -6,7 +6,7 @@
 	<!--<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier' and contains(@tags, 'head')]/@value">10</set>-->
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
 		<effect_group>
-			<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head">
+			<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="head">
 				<requirement name="EntityTagCompare" target="other" tags="helmet"/>
 			</passive_effect>
 		</effect_group>
@@ -17,7 +17,7 @@
 	<!--<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier' and contains(@tags, 'head')]/@value">10</set>-->
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
 		<effect_group>
-			<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="head">
+			<passive_effect name="DamageModifier" operation="perc_add" value="50" tags="head">
 				<requirement name="EntityTagCompare" target="other" tags="nohelmet"/>
 			</passive_effect>
 		</effect_group>

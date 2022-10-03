@@ -250,8 +250,8 @@ groupZpackBoss
 			<item name="drugPainkillers" prob="0.5"/>
 			<item name="drugVitamins" prob="0.3"/>
 			<item name="drugAntibiotics" prob="0.1"/>			
-			<item name="resourceGauze" prob="0.3"/>
-			<item name="medicalAntibioticOintment" prob="0.3"/>
+			<item name="resourceGauze" prob="0.8"/>
+			<item name="medicalAntibioticOintment" prob="0.7"/>
 			<item name="medicalBrace" prob="0.3"/>
 		</lootgroup>
 		

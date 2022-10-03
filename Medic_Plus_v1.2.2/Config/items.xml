@@ -2,9 +2,9 @@
 
 <!-- EDIT VANILLA ITEMS -->
 	<!-- Remove cureInfection from foodHoney -->
-	<setattribute xpath="//item[@name='foodHoney']/property[@name='DisplayType']" name="value">food</setattribute>
-	<remove xpath="//item[@name='foodHoney']/effect_group/triggered_effect[@cvar='$buffInfectionAddCurePerc']"/>
-	<remove xpath="//item[@name='foodHoney']/effect_group/triggered_effect[@buff='buffInfectionAddCure']"/>
+	<!--<setattribute xpath="//item[@name='foodHoney']/property[@name='DisplayType']" name="value">food</setattribute>
+	 <remove xpath="//item[@name='foodHoney']/effect_group/triggered_effect[@cvar='$buffInfectionAddCurePerc']"/>
+	<remove xpath="//item[@name='foodHoney']/effect_group/triggered_effect[@buff='buffInfectionAddCure']"/> -->
 	
 	<!-- Adjust Vanilla medicalBandage -->
 	<remove xpath="//item[@name='medicalBandage']/property/requirement[@name='CVarCompare']"/>

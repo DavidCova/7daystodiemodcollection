@@ -5809,7 +5809,7 @@ which does not exist, yet. -->
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="0" />
+		<property name="Gain_health" value="2" />
 		<property name="Gain_food" value="5" />
 		<property name="Buff" value="eatFood_4_Trigger" />
 		<property name="Gain_water" value="0" />
