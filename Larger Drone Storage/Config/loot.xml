@@ -1,6 +1,0 @@
-<configs>
-
-	<!-- JunkDrone -->
-	<set xpath="/lootcontainers/lootcontainer[@id='139']/@size">8,6</set>
-
-</configs>

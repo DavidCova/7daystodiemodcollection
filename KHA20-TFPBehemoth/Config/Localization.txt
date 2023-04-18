@@ -1,3 +1,0 @@
-Key,english
-zombieBehemoth,Zombie Behemoth
-zombieBehemothRadiated,Radiated Behemoth

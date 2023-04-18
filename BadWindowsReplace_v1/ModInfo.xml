@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="BadWindowsReplace" />
-		<Description value="this mod replaces windows that bring down your fps in cities" />
-		<Author value="GnG" />
-		<Version value="1.0" />
-	</ModInfo>
-</xml>

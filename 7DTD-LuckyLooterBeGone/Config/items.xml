@@ -1,3 +1,0 @@
-<configs>
-  <remove xpath="/items/item[starts-with(@name,'bookLuckyLooter')]" />
-</configs>

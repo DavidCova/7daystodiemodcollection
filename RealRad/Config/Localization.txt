@@ -1,9 +1,0 @@
-Key,Source,Context,Changes,English
-buffRadiation01,buffs,Buff,New,"Radiation",,,,
-buffRadiation01Name,buffs,Buff,New,"Radiation",,,,
-buffRadiation01Desc,buffs,Buff,New,"You have entered an area with radioactive contamination. Getting wet in the wasteland will increase radiation absorption. \nPut on the Hazmat Suit or seek shelter to reduce the radiation dosage. \nBeing out of the Wasteland slowly decreases radiation, while clean rain or immersion in uncontaminated water will more effectively remove radioactive contaminants. \nIncreased radiation will make you weaker and more susceptible to injuries. 100% radiation will give you mortal injuries.",,,,
-buffRadiation01Tooltip,buffs,Buff,New,"You are exposed to high levels of radiation.",,,,
-buffRadSuit,buffs,Buff,New,"Radiation Protection",,,,
-buffRadSuitName,buffs,Buff,New,"Radiation Protection",,,,
-buffRadSuitDesc,buffs,Buff,New,"You have put on the Hazmat Suit and are protected from radiation exposure. Your radiation levels will continue to decrease.",,,,
-buffRadSuitTooltip,buffs,Buff,New,"You are protected from dangerous exposure to radiation",,,,

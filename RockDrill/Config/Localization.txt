@@ -1,8 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-
-RockDrillEmpty,blocks,Block,,,Oakraven Rock Drill (Requires Drill Gas),,,,,,,,,,,,,
-RockDrillEmptyDesc,blocks,Block,,,"The Oakraven Rock Drill allows players to drill for random resources. Upon completion of a drill cycle, players can access the storage box to collect resources. Requires specific Drill Gas to power.",,,,,,,,,,,,,
-RockDrillWorking,blocks,Block,,,Oakraven Rock Drill (Drilling Stage),,,,,,,,,,,,,
-RockDrillFull,blocks,Block,,,Oakraven Rock Drill (Collection Stage),,,,,,,,,,,,,
-DrillGasCan,items,Item,,,Oakraven Drill Gas Can,,,,,,,,,,,,,
-DrillGasCanDesc,items,Item,,,"The Oakraven Drill Gas Can allows players to power the Oakraven Drill for one complete drill cycle.",,,,,,,,,,,,,
