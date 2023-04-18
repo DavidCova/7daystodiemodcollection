@@ -1,0 +1,20 @@
+<configs>		
+	<append xpath="/items/item[@name='gunMGT3M60']/property[@name='Tags']/@value">,gunMGT3M60,renderScope</append>
+	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Tags']/@value">,gunMGT2TacticalAR,renderScope</append>
+	<append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@name='Tags']/@value">,gunMGT0PipeMachineGun,renderScope</append>
+	<append xpath="/items/item[@name='gunMGT1AK47']/property[@name='Tags']/@value">,gunMGT1AK47,renderScope</append>
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='Tags']/@value">,gunHandgunT1Pistol,renderScope</append>
+	<append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@name='Tags']/@value">,gunHandgunT0PipePistol,renderScope</append>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='Tags']/@value">,gunHandgunT3SMG5,renderScope</append>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='Tags']/@value">,gunHandgunT2Magnum44,renderScope</append>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='Tags']/@value">,gunHandgunT3DesertVulture,renderScope</append>
+	<append xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@name='Tags']/@value">,gunRifleT0PipeRifle,renderScope</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='Tags']/@value">,gunRifleT1HuntingRifle,renderScope</append>
+	<append xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@name='Tags']/@value">,gunRifleT2LeverActionRifle,renderScope</append>
+	<append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='Tags']/@value">,gunRifleT3SniperRifle,renderScope</append>
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='Tags']/@value">,gunExplosivesT3RocketLauncher,renderScope</append>
+	<append xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='Tags']/@value">,gunBowT1IronCrossbow,renderScope</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='Tags']/@value">,gunBowT3CompoundCrossbow,renderScope</append>
+</configs>
+
+

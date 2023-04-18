@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="LimitedRepairs"/>
+		<Description value="Limits the max ammount of times an item can be repaired"/>
+		<Author value="Alter"/>
+		<Version value="1.0"/>
+	</ModInfo>
+</xml>

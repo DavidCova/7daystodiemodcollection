@@ -1,0 +1,10 @@
+<Config>
+  <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='8']/@value">10</set>
+  <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='10']/@value">13</set>
+  <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='12']/@value">16</set>
+  <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='16']/@value">21</set>
+  <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='20']/@value">24</set>
+  <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='24']/@value">29</set>
+  <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='40']/@value">52</set>
+  <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='500']/@value">650</set>
+</Config>

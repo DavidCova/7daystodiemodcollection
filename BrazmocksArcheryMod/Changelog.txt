@@ -1,0 +1,303 @@
+[Changelog for BrazmocksArcheryMod]
+V6.0.0 to V6.1.1 Converted Mod to work with Alpha 20 tweaks to Arrows/bolts and bows/xbows
+		 - Added Crossbow Legolas Mods (mini and large)
+		 - Added Schematics for Legolas Mods
+V5.3 	25/02/2021 looked into Iron Crossbow and recipe coding for stone arrow.
+V5.3.1 	27/01/2021 fixed issue with carbon steel arrow damage.
+V5.3 	22/01/2021 Balanced Arrows and Bolts, reduced the amount of arrows to make it easier to understand,
+		- Wooden arrows/bolts now consist of Stone, Iron, Steel and Carbon Steel arrows/bolts
+		- Aluminium arrows/bolts now consist of Stone, Iron, Steel and Carbon Steel arrows/bolts
+		- Carbon Fiber/bolts arrows now consist of Stone, Iron, Steel and Carbon Steel arrows/bolts.
+		- Removed ALL Targetpoint and Broadhead arrows/bolts
+		- The Shaft type of arrow eg. wood aluminium or carbon fiber is now what decides how well
+		  the arrows/bolts stick to the zombies so you can retrieve them.
+		- Wooden Arrows/bolts start at 45% stick chance for stone tipped arrows/bolts and increase 5% for each
+		  higher arrowhead, Iron 50%, Steel 55% and Carbon Steel 60%.
+		- Aluminium Arrows/bolts start at 60% stick chance for stone tipped arrows/bolts and increase 5% for each
+		  higher arrowhead, Iron 65%, Steel 70% and Carbon Steel 75%.
+		- Carbon Fiber Arrows/bolts start at 75% stick chance for stone tipped arrows/bolts and increase 5% for each
+		  higher arrowhead, Iron 80%, Steel 85% and Carbon Steel 90%.
+		-Increased Arrow and Bolt Stack sizes to 200 for the offensive arrows and bolts, the Flaming and Explosive are still
+		 at the vanilla stack size
+V5.2.5  16/01/2021 Fixed Primitive Bow crafting problem in starting quests.
+V5.2 	14/01/2021 Balanced recipes and removed the Fletchers and Composite Benches.
+V5.1 	18/12/2020 Added the ability to recycle arrows and bolts
+		- Added option to open each Arrow to recycle Arrowhead and Feather/Polymer
+		- Added option to open each Bolt to recycle Bolthead and Feather/Polymer
+V5.0 16/12/2020 Introduced Crossbows to the mod using Vanilla models
+		- Added ALL Crossbow Bolts (Stone, Aluminium and Carbon to respective xmls.
+		- Added Primitive Crossbow to items.xml
+		- Added Primitive Crossbow to recipes.xml
+		- Added Primitive Crossbow to traders.xml
+		- Added Primitive Crossbow to loot.xml
+		- Added Primitive Crossbow UIAtlases/ItemIconAtlas
+		- Added Primitive Crossbow to Localisation.txt
+		- Added Recurve Crossbow to items.xml
+		- Added Recurve Crossbow to recipes.xml
+		- Added Recurve Crossbow to traders.xml
+		- Added Recurve Crossbow to loot.xml
+		- Added Recurve Crossbow to progression.xml
+		- Added Recurve Crossbow UIAtlases/ItemIconAtlas
+		- Added Recurve Crossbow to localisation.txt
+		- Added Hybrid Cam Crossbow to items.xml
+		- Added Hybrid Cam Crossbow to recipes.xml
+		- Added Hybrid Cam Crossbow to traders.xml
+		- Added Hybrid Cam Crossbow to loot.xml
+		- Added Hybrid Cam Crossbow to progression.xml
+		- Added Hybrid Cam Crossbow UIAtlases/ItemIconAtlas
+		- Added Hybrid Cam Crossbow to localisation.txt
+		- Added Serrated Stone Crossbow Bolt to items.xml
+		- Added Serrated Stone Crossbow Bolt to recipes.xml
+		- Added Serrated Stone Crossbow Bolt to UIAtlases/ItemIconAtlas
+		- Added Serrated Stone Crossbow Bolthead to items.xml
+		- Added Serrated Stone Crossbow Bolthead to recipes.xml
+		- Added Serrated Stone Crossbow Bolthead to UIAtlases/ItemIconAtlas
+		- Changed Forged Carbonsteel Recipe to 150 iron and 50 clay
+		- Changed Forged Carbonsteel Crafting Area to Forge
+		- Changed Forged Carbonsteel to require a Crucible to craft
+		- Changed Recurve Bow recipe to require Aluminium instead of Scrap Iron
+
+V4.1.8 08/12/2020 Fixed minor coding error
+		- Modified Acid Recipe to not include bones
+		- Added all items that are unlocked by perks to perk screen (eg Archery level 1 now shows it unlocks fletchers bow and bench etc)
+		- Added Composite bench to advanced engineerings perk screen for level 1
+
+V4.1.7 06/12/2020 Removed unneeded duplicate recipes
+		- Changed Aluminium's crafting area to the forge
+		- added clay to Aluminium's recipe
+
+V4.1.6 06/12/2020 Rebalanced Arrow loot tables, they are now much less dominant in loot boxes etc
+		- reconfigured the Fletchers Bench recipe
+
+V4.1 29/11/2020 Added Readme file with instructions how to install mod and Credits to people who helped
+		with the mod in some way.
+		Added new icons for:
+		- All Broadhead Arrows
+		- All Broadhead Arrowheads
+		- Shock Arrow
+		- Shock Arrowhead
+		- Carbon Fiber
+		- Forged Carbon Steel
+		- Aluminium
+		- Mini Legolas Mag Extender Mod
+		- Legolas Mag Extender Mod
+		- Composite Bench
+		- Fletchers Bench
+
+V4.1 28/11/2020 Done some background tweaks to make the coding look neater
+		- Localised Damage multiplier to Bow's only
+		- Deleted entityclasses.xml to accommodate above change
+		- Changed all Archery needs to be craftable by the Fletchers Bench, no longer are archery items crafted in workbench
+
+V4.0.1 17/11/2020 Reconfigured Mod to work with Alpha 19 
+
+V4.0.0 11/05/2020 Added New Bench into the game, configured Loot and Trader xmls 
+		  and added Steel Aluminium arrows.
+		- Added Compositebench to blocks.xml
+		- Added Compositebench to recipes.xml
+		- Added XUi folder and xui.xml to mod
+		- Added workstation_Compositebench to xui.xml (UI side of the bench)
+		- Added Compositebench to Localization.txt
+		- Added loot.xml and added all items etc to it
+		- Added traders.xml and added items etc to it
+		- Added Aluminium Steel arrow to items.xml
+		- Added Aluminium Broad Steel arrow to items.xml
+		- Added Aluminium Targetpoint Steel arrow to items.xml
+
+V0.3.1 28/04/2020 Added 2 mods to the game, they are basically magazine extenders for the Bow,
+		  2 different sizes and one is specific for the Hybrid Cam Compound Bow.
+		- Added modGunBowMiniLegolasMagExtender to item_modifiers.xml
+		- Added modGunBowMiniLegolasMagExtender to recipes.xml
+		- Added modGunBowMiniLegolasMagExtender to Localization.txt
+		- Added modGunBowLegolasMagExtender to item_modifiers.xml
+		- Added modGunBowLegolasMagExtender to recipes.xml
+		- Added modGunBowLegolasMagExtender to Localization.txt
+
+V0.3.0 24/04/2020 Added New Bench into the game (HUGE thankyou to rewtgr from Guppy's Modding Discord Server)
+		- Added Fletchersbench to blocks.xml
+		- Added Fletchersbench to recipes.xml
+		- Added XUi folder and xui.xml to mod
+		- Added workstation_Fletchersbench to xui.xml (UI side of the bench)
+		- Added Fletchersbench to Localization.txt
+		- Changed all Archery related recipes to crafting area="Fletchersbench" 
+		  making them only craftable in the Fletchers Bench, Only exception to
+		  this is Wooden Stone Arrow variants.
+
+V0.2.3 14/04/2020 Added Arrow shafts and new arrow types and new resource
+		- Added ResourceAluminium to items.xml
+		- Added WoodShaft to items.xml
+		- Added AluminiumShaft to items.xml
+		- Added Aluminium Stone arrow to items.xml
+		- Added Aluminium Broad Stone arrow to items.xml
+		- Added Aluminium Targetpoint Stone arrow to items.xml
+		- Added Aluminium Iron arrow to items.xml
+		- Added Aluminium Broad Iron arrow to items.xml
+		- Added Aluminium Targetpoint Iron arrow to items.xml
+
+v0.2.2.1 28/03/2020 Changed Mods name to BrazmocksArcheryMod
+
+v0.2.2 10/03/2020 Balancing of Bows to make them considerably better than Vanilla Bows but must spec into Archery Perk to craft
+		- Locked Fletchers Bow behind Archery 1
+		- Locked Recurve Bow behind Archery 3
+		- Locked Hybrid Cam Compound Bow behind Archery 5
+		- Buffed Fletchers Bow Reload speed and roundsperminute +40% above Primitive Bow
+		- Buffed Recurve Bow Reload speed and roundsperminute +50% above Wooden Bow
+		- Buffed Hybrid Cam Compound Bow Reload speed and roundsperminute +60% above Compound Bow
+
+v0.2.1 01/03/2020 Added new Items and Recipes
+		- Added BroadCarbon arrow to items.xml
+		- Added BroadCarbon arrowhead to items.xml
+		- Added BroadCarbon arrow to recipes.xml
+		- Added BroadCarbon arrowhead to recipes.xml
+		- Added BroadCarbon arrow to localisation.txt
+		- Added BroadCarbon arrowhead to localisation.txt
+		- Added Targetpoint Carbon arrow to items.xml
+		- Added Targetpoint Carbon arrowhead to items.xml
+		- Added Targetpoint Carbon arrow to recipes.xml
+		- Added Targetpoint Carbon arrowhead to recipes.xml
+		- Added Targetpoint Carbon arrow to localisation.txt
+		- Added Targetpoint Carbon arrowhead to localisation.txt
+		- Added BroadCarbon arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added BroadCarbon arrowhead icon to UIAtlases/ItemIconAtlas Folder
+		- Added Targetpoint Carbon arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added Targetpoint Carbon arrowhead icon to UIAtlases/ItemIconAtlas Folder
+
+v0.2.0 22/02/2020 Added new Item, Recipe and .xml
+		- Added progression.xml to add unlock abilities
+		- Added gunBowHybridCamCompound to items.xml 
+		- Added ammoArrowCarbonAP to items.xml
+		- Added gunBowHighPoweredCompoundParts to items.xml
+		- Added resourceResin to items.xml
+		- Added resourceCarbonSteel to items.xml
+		- Added resourceCarbonFiber to items.xml
+		- Added gunBowHybridCamCompound to recipes.xml 
+		- Added ammoArrowCarbonAP to recipes.xml
+		- Added gunBowHighPoweredCompoundParts to recipes.xml
+		- Added resourceResin to recipes.xml
+		- Added resourceCarbonSteel to recipes.xml
+		- Added resourceCarbonFiber to recipes.xml
+		- Added gunBowHybridCamCompound to localisation.txt
+		- Added ammoArrowCarbonAP to localisation.txt
+		- Added gunBowHighPoweredCompoundParts to localisation.txt
+		- Added resourceResin to localisation.txt
+		- Added resourceCarbonSteel to localisation.txt
+		- Added resourceCarbonFiber to localisation.txt
+		- Added gunBowHighPoweredCompoundParts icon to UIAtlases/ItemIconAtlas Folder
+		- Added ammoArrowCarbonAP icon to UIAtlases/ItemIconAtlas Folder
+		- Added gunBowHighPoweredCompoundParts icon to UIAtlases/ItemIconAtlas Folder
+		- Added resourceResin icon to UIAtlases/ItemIconAtlas Folder
+		- Added resourceCarbonSteel icon to UIAtlases/ItemIconAtlas Folder
+		- Added resourceCarbonFiber icon to UIAtlases/ItemIconAtlas Folder
+
+v0.1.9.5 17/02/2020 Adjusted Targetpoint arrow projectile velocity by 30% and increased headshot damage
+		- Stone Targetpoint Projectile Velocity set to 58.5 (up from 45)
+		- Iron Targetpoint Projectile Velocity set to 65 (up from 50)
+		- Steel Targetpoint Projectile Velocity set to 71.5 (up from 55)
+		- Added Entityclasses.xml set to increase headshot damage
+
+v0.1.9 15/02/2020 Added new Item and Recipe
+		- Added Electic Shock arrow to items.xml (uses the knockdown instead of stun, for time being)
+		- Added Electic Shock arrowhead to items.xml
+		- Added Electic Shock arrow to recipes.xml
+		- Added Electic Shock arrowhead to recipes.xml
+		- Added Electic Shock arrow to localisation.txt
+		- Added Electic Shock arrowhead to localisation.txt
+		- Added Electic Shock arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added Electic Shock arrowhead icon to UIAtlases/ItemIconAtlas Folder
+
+v0.1.8 14/02/2020 Added new Item and Recipe
+		- Added Stone Stun arrow to items.xml
+		- Added Stone Stun arrowhead to items.xml
+		- Added Stone Stun arrow to recipes.xml
+		- Added Stone Stun arrowhead to recipes.xml
+		- Added Stone Stun arrow to localisation.txt
+		- Added Stone Stun arrowhead to localisation.txt
+		- Added Stone Stun arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added Stone Stun arrowhead icon to UIAtlases/ItemIconAtlas Folder
+
+v0.1.7 12/02/2020 Added new Items and Recipes
+		- Added BroadSteel arrow to items.xml
+		- Added BroadSteel arrowhead to items.xml
+		- Added BroadSteel arrow to recipes.xml
+		- Added BroadSteel arrowhead to recipes.xml
+		- Added BroadSteel arrow to localisation.txt
+		- Added BroadSteel arrowhead to localisation.txt
+		- Added Targetpoint Steel arrow to items.xml
+		- Added Targetpoint Steel arrowhead to items.xml
+		- Added Targetpoint Steel arrow to recipes.xml
+		- Added Targetpoint Steel arrowhead to recipes.xml
+		- Added Targetpoint Steel arrow to localisation.txt
+		- Added Targetpoint Steel arrowhead to localisation.txt
+		- Added BroadSteel arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added BroadSteel arrowhead icon to UIAtlases/ItemIconAtlas Folder
+		- Added Targetpoint Steel arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added Targetpoint Steel arrowhead icon to UIAtlases/ItemIconAtlas Folder
+
+v0.1.6 9/02/2020 Added new items and recipes
+		- Added Recurve bow to items.xml
+		- Added Recurve bow to Recipes.xml
+		- Added Recurve bow to localisation.txt
+		- Added Bow Parts to Recipes.xml
+		- Added Broadiron arrow to items.xml
+		- Added Broadiron arrowhead to items.xml
+		- Added Broadiron arrow to recipes.xml
+		- Added Broadiron arrowhead to recipes.xml
+		- Added Broadiron arrow to localisation.txt
+		- Added Broadiron arrowhead to localisation.txt
+		- Added Broadiron arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added Broadiron arrowhead icon to UIAtlases/ItemIconAtlas Folder
+
+v0.1.5 7/02/2020 Added arrow properties
+		- Added ProjectileStickChance to Broadstone arrow set to "0" Always Break
+		- Added ProjectileStickChance to Targetpoint stone arrow set to "1" Always Stick
+		- Added ProjectileStickChance to Targetpoint iron arrow set to "1" Always Stick
+		- Increased Broadstone arrow damage from 27 to 32
+
+v0.1.4 6/02/2020 Updated arrow properties
+		- Decreased Targetpoint stone arrow drop from -2.8 to -1
+		- Decreased Targetpoint iron arrow drop from -2.8 to -1
+		- Decreased Targetpoint stone arrow damage from 23 to 18
+		- Decreased Targetpoint iron arrow damage from 26 to 20
+		  (to be more realistic being more accurate but less damage)
+
+v0.1.3 5/02/2020 Added New items and recipes,changed icon
+		- Added Targetpoint iron arrow to items.xml
+		- Added Targetpoint iron arrowhead to items.xml
+		- Added Targetpoint iron arrow to recipes.xml
+		- Added Targetpoint iron arrowhead to recipes.xml
+		- Added Targetpoint iron arrow to localisation.txt
+		- Added Targetpoint iron arrowhead to localisation.txt
+		- Added Targetpoint iron arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added Targetpoint iron arrowhead icon to UIAtlases/ItemIconAtlas Folder
+		- Updated Targetpoint stone arrow icon graphic
+
+v0.1.2 4/02/2020 Added New items and recipes, renamed bow
+		- Added Targetpoint stone arrow to items.xml
+		- Added Targetpoint stone arrowhead to items.xml
+		- Added Targetpoint stone arrow to recipes.xml
+		- Added Targetpoint stone arrowhead to recipes.xml
+		- Added Targetpoint stone arrow to localisation.txt
+		- Added Targetpoint stone arrowhead to localisation.txt
+		- Added Targetpoint stone arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added Targetpoint stone arrowhead icon to UIAtlases/ItemIconAtlas Folder
+		- Renamed Recurve Bow to Fletchers Bow in items.xml
+		- Renamed Recurve Bow to Fletchers Bow in recipes.xml
+		- Renamed Recurve Bow to Fletchers Bow in localisation.txt
+		- Renamed Recurve Bow to Fletchers Bow icon in UIAtlases/ItemIconAtlas Folder
+
+v0.1.1 3/02/2020 Added new items and recipes
+		- Added Broadstone arrow to items.xml
+		- Added Broadstone arrowhead to items.xml
+		- Added Broadstone arrow to recipes.xml
+		- Added Broadstone arrowhead to recipes.xml
+		- Added Feather to recipes.xml
+		- Added Broadstone arrow to localisation.txt
+		- Added Broadstone arrowhead to localisation.txt
+		- Added Broadstone arrow icon to UIAtlases/ItemIconAtlas Folder
+		- Added Broadstone arrowhead icon to UIAtlases/ItemIconAtlas Folder
+
+v0.1.0 2/02/2020 Created Mod
+		- Added Recurve bow to items.xml
+		- Added New Stone arrow recipe to Recipes.xml
+		- Added Recurve bow to localisation.txt
+		- Used existing Primitive bow icon put into UIAtlases/ItemIconAtlas Folder

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Remove Food And Drink" />
+		<Description value="Remove most food and drink from loot, everything is spoiled in the apocalypse!" />
+		<Author value="CB" />
+		<Version value="A20" />
+		<Website value="" />
+	</ModInfo>
+</xml>

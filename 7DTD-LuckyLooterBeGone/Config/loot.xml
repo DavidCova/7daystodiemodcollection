@@ -1,0 +1,7 @@
+<configs>
+    <remove xpath="/lootcontainers/lootgroup[@name='perkBooksT1']/item[starts-with(@name,'bookLuckyLooter')]" />
+    <remove xpath="/lootcontainers/lootgroup[@name='groupSafeBooks']/item[starts-with(@name,'bookLuckyLooter')]" />
+    <remove xpath="/lootcontainers/lootgroup[@name='twitch_perkBooks']/item[starts-with(@name,'bookLuckyLooter')]" />
+
+
+</configs>

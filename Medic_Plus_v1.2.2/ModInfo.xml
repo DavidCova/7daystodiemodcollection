@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="Medic Plus"/>
+			<Description value="Increases the risk of infection and other debuffs, creates an addiction and withdrawal system, and adds better late game medical items."/>
+			<Author value="Intrepidly"/>
+			<Version value="A20" />
+
+			<Website value="..."/>
+		</ModInfo>
+	</xml>

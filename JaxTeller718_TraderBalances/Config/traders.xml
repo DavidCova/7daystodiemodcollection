@@ -1,0 +1,26 @@
+<JaxTeller718>
+
+	<set xpath="/traders/trader_info[@id='1']/@min_inventory">30</set>
+	<set xpath="/traders/trader_info[@id='1']/@max_inventory">60</set>
+	<set xpath="/traders/trader_info[@id='1']/@min_items_swapped">20</set>
+	<set xpath="/traders/trader_info[@id='1']/@max_items_swapped">20</set>
+	<set xpath="/traders/trader_info[@id='1']/@reset_interval">9</set>
+	<set xpath="/traders/trader_info[@id='4']/@reset_interval">5</set>
+	<set xpath="/traders/trader_info[@id='4']/@min_inventory">4</set>
+	<set xpath="/traders/trader_info[@id='4']/@max_inventory">10</set>
+	<set xpath="/traders/trader_info[@id='4']/@min_items_swapped">4</set>
+	<set xpath="/traders/trader_info[@id='4']/@max_items_swapped">10</set>
+	<!--Set your own opening time-->
+	<set xpath="/traders/trader_info[@id='1']/@open_time">09:30</set> <!--Trader Joel-->
+	<set xpath="/traders/trader_info[@id='2']/@open_time">09:30</set> <!--Trader Jen-->
+	<set xpath="/traders/trader_info[@id='6']/@open_time">09:30</set> <!--Trader Bob-->
+	<set xpath="/traders/trader_info[@id='7']/@open_time">09:30</set> <!--Trader Hugh-->
+	<set xpath="/traders/trader_info[@id='8']/@open_time">09:30</set> <!--Trader Rekt-->		
+<!--Set your own closing time-->
+	<set xpath="/traders/trader_info[@id='1']/@close_time">17:30</set> <!--Trader Joel-->
+	<set xpath="/traders/trader_info[@id='2']/@close_time">17:30</set> <!--Trader Jen-->
+	<set xpath="/traders/trader_info[@id='6']/@close_time">17:30</set> <!--Trader Bob-->
+	<set xpath="/traders/trader_info[@id='7']/@close_time">17:30</set> <!--Trader Hugh-->
+	<set xpath="/traders/trader_info[@id='8']/@close_time">17:30</set> <!--Trader Rekt-->	
+</JaxTeller718>
+				

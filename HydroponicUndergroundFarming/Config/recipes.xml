@@ -1,0 +1,175 @@
+<Arramus>
+
+	<append xpath="/recipes">
+	
+	<!-- Hydroponic Farming -->
+	
+	<recipe name="HydroponicWorkBench" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceMechanicalParts" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceGlue" count="4"/>
+		<ingredient name="resourceWood" count="50"/>
+	</recipe>
+	
+	<recipe name="HydroponicFarmBlock" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="resourceElectricParts" count="10"/>
+		<ingredient name="Compost" count="3"/>
+		<ingredient name="resourceHeadlight" count="3"/>
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceConcreteMix" count="10"/>
+	</recipe>
+	
+	<recipe name="Compost" count="1" craft_time="45" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="resourceClayLump" count="30"/>
+		<ingredient name="foodRottingFlesh" count="10"/>
+		<ingredient name="drinkJarRiverWater" count="2"/>
+		<ingredient name="resourceYuccaFibers" count="20"/>			
+	</recipe>
+
+	<recipe name="HydroponicFeed" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="drinkJarBeer" count="2"/>
+		<ingredient name="foodCropBlueberries" count="10"/>
+		<ingredient name="drugHerbalAntibiotics" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicYuccaSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedYucca1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicCornSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedCorn1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicPotatoSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedPotato1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicCoffeeSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedCoffee1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicGoldenrodSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedGoldenrod1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicChrysanthemumSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedChrysanthemum1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicHopSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedHop1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicPumpkinSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedPumpkin1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicBlueberrySeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedBlueberry1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicJalapenoSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Jalapeno" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicPepperSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="RedPepper" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicTomatoSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Tomato" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicTurnipSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Turnip" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicEggplantSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Eggplant" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicStrawberrySeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Strawberry" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+	
+	<recipe name="HydroponicPineappleSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Pineapple" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+	
+	<!-- Hydroponic Food Recipes -->
+	
+	<recipe name="foodHydroponicMixedVegetableSoup" count="1" craft_time="55" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Jalapeno" count="1"/>
+		<ingredient name="RedPepper" count="1"/>
+		<ingredient name="Turnip" count="1"/>
+		<ingredient name="Eggplant" count="1"/>
+		<ingredient name="Tomato" count="3"/>		
+	</recipe>
+
+	<recipe name="foodHydroponicMixedFruitBowl" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Strawberry" count="6"/>
+		<ingredient name="Pineapple" count="1"/>
+		<ingredient name="foodCropBlueberries" count="10"/>	
+	</recipe>
+
+	<recipe name="foodHydroponicFruitMuffin" count="1" craft_time="40" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Strawberry" count="2"/>
+		<ingredient name="foodCropBlueberries" count="3"/>
+		<ingredient name="foodEgg" count="1"/>
+		<ingredient name="foodCornMeal" count="1"/>		
+	</recipe>
+
+	<recipe name="foodHydroponicSalmonBake" count="1" craft_time="65" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="Turnip" count="2"/>
+		<ingredient name="foodCanSalmon" count="1"/>
+		<ingredient name="foodEgg" count="2"/>
+		<ingredient name="Tomato" count="1"/>		
+	</recipe>
+
+	<!-- Firefly and Shrooms -->
+	
+	<recipe name="FireFlyJar" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="FireFlyBug" count="1"/>
+		<ingredient name="drinkJarEmpty" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceGlue" count="1"/>
+		<ingredient name="resourceYuccaFibers" count="10"/>
+	</recipe>	
+	
+	</append>
+	
+</Arramus>

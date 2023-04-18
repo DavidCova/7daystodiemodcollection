@@ -1,0 +1,75 @@
+<DurielTraders>
+
+<!-- This places the schematic items in the traders tables where the other schematics for food and drinks are -->
+	<append xpath="traders/trader_item_groups/trader_item_group[@name='farmingCookingRecipes']">
+		<item name="foodDurielBoiledMeatAndPeasSchematic"/>
+		<item name="foodDurielBaconAndPeasSchematic"/>
+		<item name="foodDurielBaconSandwichSchematic"/>
+		<item name="foodDurielBigSteakSchematic"/>
+		<item name="foodDurielBigBoiledMeatSchematic"/>
+		<item name="foodDurielMashPotatoSchematic"/>
+		<item name="foodDurielSteakAndEggsSchematic"/>
+		<item name="foodDurielPineForestSaladSchematic"/>
+		<item name="foodDurielHoneyNuggetSchematic"/>
+		<item name="foodDurielCompleteStewSchematic"/>
+		<item name="foodDurielEnormousSteakSchematic"/>
+		<item name="drinkDurielHoneybrewMeadSchematic"/>
+		<item name="foodDurielChickenStewSchematic"/>
+		<item name="foodDurielChickenNoodlesSchematic"/>
+		<item name="foodDurielZombieOmeletSchematic"/>
+		<item name="foodDurielHoneyHamSchematic"/>
+		<item name="foodDurielFruitMixSchematic"/>
+		<item name="foodDurielSedanLunchSchematic"/>
+		<item name="drinkDurielYuccaBeerSchematic"/>
+		<item name="drinkDurielPumpkinBeerSchematic"/>
+		<item name="drinkDurielBlueberryBeerSchematic"/>
+		<item name="drinkDurielVodkaSchematic"/>
+		<item name="drinkDurielHealthPotionSchematic" prob="0.3"/>
+	</append>
+
+<!-- This places the actual items in the traders tables where the others are -->
+	<append xpath="traders/trader_item_groups/trader_item_group[@name='cannedfood']">
+		<item name="foodDurielPorkNBeans"/>
+		<item name="foodDurielMacNCheese"/>
+		<item name="foodDurielCupRamen"/>
+		<item name="foodDurielRice"/>
+		<item name="foodDurielPasta"/>
+		<item name="foodDurielTeaPackage"/>
+		<item name="foodDurielTeaBag" count="1,6"/>
+	</append>
+	<append xpath="traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+		<item name="foodDurielBoiledMeatAndPeas"/>
+		<item name="foodDurielOldRedberryPie"/>
+		<item name="foodVegetableStew"/>
+		<item name="foodDurielEggFried"/>
+		<item name="foodDurielBoiledMeatAndPeas"/>
+		<item name="foodDurielBaconAndPeas"/>
+		<item name="foodDurielBaconSandwich"/>
+		<item name="foodDurielMashPotato"/>
+		<item name="foodDurielCompleteStew"/>
+		<item name="foodDurielChickenNoodles"/>
+		<item name="foodDurielChickenStew"/>
+		<item name="foodDurielFruitMix"/>
+		<item name="foodDurielBigSteak"/>
+		<item name="foodDurielEnormousSteak"/>
+		<item name="foodDurielBigBoiledMeat"/>
+		<item name="foodDurielPineForestSalad"/>
+		<item name="foodDurielZombieOmelet"/>
+		<item name="foodDurielSedanLunch"/>
+		<item name="foodDurielHoneyNugget"/>
+		<item name="foodDurielHoneyHam"/>
+		<item name="foodDurielSteakAndEggs"/>
+	</append>
+	<append xpath="traders/trader_item_groups/trader_item_group[@name='preparedDrink']">
+		<item name="drinkDurielVodka"/>
+		<item name="drinkDurielHoneybrewMead"/>
+		<item name="drinkDurielYuccaBeer"/>
+		<item name="drinkDurielPumpkinBeer"/>
+		<item name="drinkDurielBlueberryBeer"/>
+		<item name="drinkDurielBigYuccaJuice"/>
+		<item name="drinkDurielBigYellowTea"/>
+		<item name="drinkDurielBigRedTea"/>
+		<item name="drinkDurielBottleBoiledWater"/>
+	</append>
+
+</DurielTraders>

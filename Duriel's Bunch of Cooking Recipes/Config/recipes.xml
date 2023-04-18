@@ -1,0 +1,360 @@
+<DurielRecipes>
+
+<!-- This is the list of recipes for the dishes and drinks to become craftable -->
+	<append xpath="recipes">
+	<!--============ Food Items ============-->
+	<!-- Prepared dishes : with cans -->
+		<!-- T4 recipes -->
+		<recipe name="foodDurielChickenStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanChicken" count="1"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<ingredient name="foodCanSoup" count="1"/>
+			<ingredient name="foodBakedPotato" count="2"/>
+			<ingredient name="foodCornOnTheCob" count="2"/>
+		</recipe>
+		<recipe name="foodDurielChickenNoodles" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanChicken" count="1"/>
+			<ingredient name="foodCanMiso" count="1"/>
+			<ingredient name="foodCanSoup" count="1"/>
+			<ingredient name="foodDurielCupRamen" count="1"/>
+			<ingredient name="resourceAnimalFat" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielZombieOmelet" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable"> <!-- Fallout NV Easter Egg -->
+			<ingredient name="foodEgg" count="4"/>
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodDurielMacNCheese" count="1"/>
+			<ingredient name="foodCropYuccaFruit" count="5"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRawMeat"/>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCropYuccaFruit"/>
+			</effect_group>
+		</recipe>
+		<!-- T3 recipes -->
+		<recipe name="foodDurielFruitMix" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropBlueberries" count="4"/>
+			<ingredient name="foodCanPears" count="1"/>
+			<ingredient name="foodCropYuccaFruit" count="4"/>
+			<ingredient name="foodCropPumpkin" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodDurielSedanLunch" count="1" craft_area="campfire" tags="perkMasterChef,learnable"> <!-- Fallout NV Easter Egg -->
+			<ingredient name="foodDurielMashPotato" count="1"/>
+			<ingredient name="foodDurielPorkNBeans" count="1"/>
+			<ingredient name="foodCanSham" count="1"/>
+			<ingredient name="drinkCanEmpty" count="1"/>
+		</recipe>
+		<!-- T2 recipes -->
+		<!-- T1 recipes -->
+		<recipe name="foodDurielBoiledMeatAndPeas" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielBaconAndPeas" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<!-- T0 and 0/1 recipes -->
+		<recipe name="foodDurielPreparedCupRamen" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="foodDurielCupRamen" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+	<!-- Cooked dishes : with only natural ingredients -->
+		<!-- T2 recipes -->
+		<recipe name="foodDurielCompleteStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="foodCropMushrooms" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielHoneyHam" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef"> <!-- Don't Starve Easter Egg -->
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodHoney" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe> <!-- Alternative below -->
+		<recipe name="foodDurielHoneyHam" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef"> <!-- Don't Starve Easter Egg -->
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodHoney" count="2"/>
+			<ingredient name="drinkDurielBottleBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielSteakAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef"> <!-- Capp00 wanted steak and eggs DF series ep 32 -->
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodEgg" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<!-- T1 recipes -->
+		<recipe name="foodDurielBaconSandwich" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCornBread" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielBigSteak" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielEnormousSteak" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="15"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-3" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielBigBoiledMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielBigBoiledMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable"> <!-- Alternative recipe -->
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="drinkDurielBottleBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodDurielMashPotato" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="foodDurielClayBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielMashPotato" count="1" craft_area="campfire" tags="perkMasterChef"> <!-- Alternative recipe -->
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodDurielWaterCleanClayBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielPineForestSalad" count="1" craft_area="campfire" tags="perkMasterChef"> <!-- Fallout NV Easter Egg -->
+			<ingredient name="foodGrilledMeat" count="2"/>
+			<ingredient name="foodCropYuccaFruit" count="2"/>
+			<ingredient name="treePlantedOak1m" count="1"/>
+			<ingredient name="treePlantedMountainPine1m" count="1"/>
+			<ingredient name="foodDurielWoodenBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielHoneyNugget" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef"> <!-- Don't Starve Easter Egg -->
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodHoney" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<!-- T0 and 0/1 recipes -->
+		<recipe name="foodDurielMashPumpkin" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="foodCropPumpkin" count="1"/>
+			<ingredient name="foodDurielClayBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielEggFried" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+		</recipe>
+		<recipe name="foodDurielBigCharredMeat" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="foodRawMeat" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<!-- Prepared canned food = open can and heat it in campfire -->
+		<recipe name="foodDurielPreparedMacNCheese" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="foodDurielMacNCheese" count="1"/>
+			<ingredient name="foodDurielClayBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielPreparedCupRamen" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="foodDurielCupRamen" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodDurielPreparedCupRamen" count="2" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="foodDurielCupRamen" count="2"/>
+			<ingredient name="drinkDurielBottleBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodDurielPastaBowl" count="4" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="foodDurielPasta" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="4"/>
+			<ingredient name="foodDurielWoodenBowl" count="4"/>
+		</recipe>
+		<recipe name="foodDurielRiceBowl" count="4" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodDurielRice" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="4"/>
+			<ingredient name="foodDurielWoodenBowl" count="4"/>
+		</recipe>
+	<!--============ Drink Items ============-->
+		<recipe name="drinkDurielHealthPotion" count="1" craft_area="chemistryStation" tags="perkMasterChef,learnable,chemStationCrafting">
+			<ingredient name="medicalBloodBag" count="10"/>
+			<ingredient name="medicalAloeCream" count="10"/>
+			<ingredient name="drugAntibiotics" count="4"/>
+			<ingredient name="drugPainkillers" count="3"/>
+			<ingredient name="drinkJarPureMineralWater" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielVodka" count="1" craft_area="chemistryStation" tags="perkMasterChef,learnable,chemStationCrafting">
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielHoneybrewMead" count="2" craft_area="chemistryStation" tags="perkMasterChef,learnable,chemStationCrafting">
+			<ingredient name="resourceCropHopsFlower" count="8"/>
+			<ingredient name="foodHoney" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="resourceCropHopsFlower"/>
+			</effect_group>
+		</recipe>
+		<recipe name="drinkDurielYuccaBeer" count="1" craft_area="campfire" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropHopsFlower" count="4"/>
+			<ingredient name="foodCropYuccaFruit" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
+			</effect_group>
+		</recipe>
+		<recipe name="drinkDurielPumpkinBeer" count="1" craft_area="campfire" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropHopsFlower" count="4"/>
+			<ingredient name="foodCropPumpkin" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
+			</effect_group>
+		</recipe>
+		<recipe name="drinkDurielBlueberryBeer" count="1" craft_area="campfire" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropHopsFlower" count="4"/>
+			<ingredient name="foodCropBlueberries" count="4"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCropBlueberries"/>
+			</effect_group>
+		</recipe>
+		<recipe name="drinkDurielBigYuccaJuice" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCropYuccaFruit" count="4"/>
+			<ingredient name="drinkDurielBottleEmpty" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielBigYellowTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropGoldenrodPlant" count="2"/>
+			<ingredient name="drinkDurielBottleBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielBigRedTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+			<ingredient name="drinkDurielBottleBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielInfusedTea" count="1" craft_time="20" tags="perkMasterChef">
+			<ingredient name="foodDurielTeaBag" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielBigInfusedTea" count="1" craft_time="20" tags="perkMasterChef">
+			<ingredient name="foodDurielTeaBag" count="2"/>
+			<ingredient name="drinkDurielBottleBoiledWater" count="1"/>
+		</recipe>
+	<!--============ Container Items ============-->
+		<recipe name="foodDurielWaterCleanClayBowl" count="1" craft_area="campfire" craft_time="40" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
+			<ingredient name="foodDurielWaterUncleanClayBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielWaterCleanWoodenBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="40" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
+			<ingredient name="foodDurielWaterUncleanWoodenBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielWaterCleanClayBowl" count="1">
+			<ingredient name="foodDurielClayBowl" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodDurielWaterCleanWoodenBowl" count="1">
+			<ingredient name="foodDurielWoodenBowl" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodDurielWaterUncleanClayBowl" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="resourceSnowBall" count="1"/>
+			<ingredient name="foodDurielClayBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielWaterUncleanWoodenBowl" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="resourceSnowBall" count="1"/>
+			<ingredient name="foodDurielWoodenBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielClayBowl" count="1" material_based="true" craft_area="forge" craft_time="60">
+			<ingredient name="unit_clay" count="20"/>
+		</recipe>
+		<recipe name="foodDurielClayBowlWet" count="1" craft_time="60">
+			<ingredient name="resourceClayLump" count="4"/>
+		</recipe>
+		<recipe name="foodDurielClayBowl" count="1" craft_area="campfire" craft_time="120">
+			<ingredient name="foodDurielClayBowlWet" count="1"/>
+		</recipe>
+		<recipe name="foodDurielWoodenBowl" count="1" craft_time="10">
+			<ingredient name="resourceWood" count="4"/>
+		</recipe>
+		<recipe name="foodDurielWoodenBowl" count="1" craft_time="10">
+			<ingredient name="resourceWood" count="4"/>
+		</recipe>
+		<recipe name="foodDurielWoodenBowl" count="1">
+			<ingredient name="foodDurielWaterUncleanWoodenBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielWoodenBowl" count="1">
+			<ingredient name="foodDurielWaterCleanWoodenBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielClayBowl" count="1">
+			<ingredient name="foodDurielWaterUncleanClayBowl" count="1"/>
+		</recipe>
+		<recipe name="foodDurielClayBowl" count="1">
+			<ingredient name="foodDurielWaterCleanClayBowl" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielBottleBoiledWater" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="drinkDurielBottleRiverWater" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielBottleRiverWater" count="1" craft_area="campfire" tags="perkMasterChef">
+			<ingredient name="resourceSnowBall" count="2"/>
+			<ingredient name="drinkDurielBottleEmpty" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielBottleEmpty" count="1" craft_area="workbench" tags="perkMasterChef">
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="drinkDurielBottleEmpty" count="1" tags="perkMasterChef">
+			<ingredient name="drinkDurielBottleRiverWater" count="1"/>
+		</recipe>
+		<recipe name="drinkDurielBottleEmpty" count="1" tags="perkMasterChef">
+			<ingredient name="drinkDurielBottleBoiledWater" count="1"/>
+		</recipe>
+	</append>
+	
+	<!--============ Patching recipes for which I need to make them take my items instead ============-->
+	<remove xpath="/recipes/recipe[@name='drinkJarPureMineralWater']">
+	</remove>
+	<append xpath="/recipes">
+		<recipe name="drinkJarPureMineralWater" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkDurielBottleRiverWater" count="1"/>
+			<ingredient name="resourceCoal" count="1"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="1"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+		</recipe>
+		<recipe name="drinkJarPureMineralWater" count="1" tags="perkMasterChef,learnable">
+			<ingredient name="drinkDurielBottleBoiledWater" count="1"/>
+			<ingredient name="resourceCoal" count="1"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="1"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+		</recipe>
+	</append>
+
+</DurielRecipes>

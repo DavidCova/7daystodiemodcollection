@@ -1,0 +1,7 @@
+﻿Key,File,Type,UsedInMainMenu,NoTranslate,english
+buffNightExpBoostStart,buffs,buff,,,"Night EXP Boost",
+buffNightExpBoostTooltip,buffs,buff,,,"[D50000]You're getting a [AF00FF]Night[-] Time Boost of [AF00FF]EXP[-] and [F9A825]Loot[-]![-] [32CD32]Good Luck![-]",
+buffNightExpBoostEndTooltip,buffs,Buff,,,"[FF0000]Whew! Night Time over. You Good?[-]",
+buffNightExpBoostDesc,buffs,buff,,,"Yay you are getting more EXP but be careful of the Zombies still!"
+buffNightGamestageBoost,buffs,buff,,,"Night Loot Gamestage",
+buffNightGamestageBoostDesc,buffs,buff,,,"Yay you are getting an updated Loot Gamestage. Good Luck on the loot but be careful of the Zombies still!",

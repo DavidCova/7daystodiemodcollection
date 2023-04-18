@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Duriel's Bunch of Cooking Recipes" />
+		<Description value="Adds a bunch of little recipes for your cooking needs." />
+		<Author value="Duriel" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

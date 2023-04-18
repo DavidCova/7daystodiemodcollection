@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <ModInfo>
+        <Name value="BoostEXPandLootStageAtNight" />
+        <Description value="Adds a night time buff to EXP and the LootGamestage." />
+        <Author value="DarkAoRaidenX" />
+        <Version value="2.0" />
+    </ModInfo>
+</xml>

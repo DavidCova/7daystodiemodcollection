@@ -1,0 +1,38 @@
+<configs>
+
+	<append xpath="/items/item[@name='apparelHazmatMask']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitMask"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitMask"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatJacket']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitChest"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitChest"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatGloves']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitGloves"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitGloves"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatPants']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitLegs"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitLegs"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatBoots']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitBoots"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitBoots"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+</configs>

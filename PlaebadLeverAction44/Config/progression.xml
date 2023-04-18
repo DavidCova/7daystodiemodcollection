@@ -1,0 +1,45 @@
+<PlaebadLeverAction44Progression>
+
+    <!-- Enable applicable Magnum Enforcer book perks for the Lever Action Rifle -->
+
+    <!-- Book 1: 10 pct more damage -->
+    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerDamage']/effect_group[1]">
+        <effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.1" tags="rifle44"/>
+		</effect_group>
+    </insertAfter>
+
+    <!-- Book 3: Last shot double damgae -->
+    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerPunks']/effect_group[1]">
+        <effect_group>
+			<requirement name="RoundsInMagazine" operation="LTE" value="0"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="1" tags="rifle44"/>
+		</effect_group>
+    </insertAfter>
+
+    <!-- Book 4: 5 pct barter bonus -->
+    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerIntimidation']/effect_group[1]">
+        <effect_group>
+			<requirement name="ItemHasTags" tags="rifle44"/>
+				<passive_effect name="BarteringBuying" operation="base_add" level="1" value="0.05"/>
+				<passive_effect name="BarteringSelling" operation="base_add" level="1" value="0.05"/>
+		</effect_group>
+    </insertAfter>
+
+    <!-- Book 7: 20 pct less stamina sprinting in combat -->
+    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerCriminalPursuit']/effect_group[1]">
+        <effect_group>
+			<requirement name="ItemHasTags" tags="rifle44"/>
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerCriminalPursuit" operation="Equals" value="1"/>
+				<triggered_effect trigger="onCombatEntered" action="AddBuff" buff="buffEnforcerCriminalPursuit"/>
+		</effect_group>
+    </insertAfter>
+
+    <!-- Series completion bonus: Shot penetration and bulk unlock -->
+    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerComplete']/effect_group[1]">
+        <effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle44MagnumBulletAP,ammoBundle44MagnumBulletHP,ammoBundle44MagnumBulletBall"/>
+		</effect_group>
+    </insertAfter>
+
+</PlaebadLeverAction44Progression>

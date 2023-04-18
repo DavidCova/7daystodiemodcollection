@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<ModInfo>
+		<Name value="Thunder Sn1per's Corpse Remover"/>
+		<Description value="This mod will force corpses to despawn after much less time."/>
+		<Author value="Thunder Sn1per"/>
+		<Version value="1.0"/>
+	</ModInfo>
+</xml>

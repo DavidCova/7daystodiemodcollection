@@ -1,0 +1,429 @@
+<configs>
+<append xpath="/entity_classes/entity_class[@name='playerMale']">
+	<effect_group name="Fishing Harvest">
+			<passive_effect name="HarvestCount" operation="base_set" value="1" tags="FishingBaitHarvestT0"/>
+			<passive_effect name="HarvestCount" operation="base_set" value="0" tags="FishingBaitHarvestT1"/>
+			<passive_effect name="HarvestCount" operation="base_set" value="0" tags="FishingBaitHarvestT2"/>
+			<passive_effect name="HarvestCount" operation="base_set" value="0" tags="FishingBaitHarvestT3"/>
+	</effect_group>
+</append>
+
+<!-- new entities -->
+<append xpath="/entity_classes">
+	<entity_class name="animalFishingDecoy" extends="animalTemplateHostile">
+	<property name="Tags" value="decoy"/>
+	<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="MapIcon" value="ui_game_symbol_GrubBaitIcon"/>
+	<property name="TrackerIcon" value="ui_game_symbol_GrubBaitIcon"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="Wander"/>
+	<property name="AITask-2" value="ApproachSpot"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="10"/>
+	<property name="DeadBodyHitPoints" value="1"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="SizeScale" value=".15"/>
+	
+	<property name="Buffs" value="buffFishingDecoyKill"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial2" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial3" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/> 
+	
+	
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="6"/>
+	</effect_group>
+
+</entity_class>
+
+	<entity_class name="animalBaitGrub" extends="animalTemplateHostile">
+	<property name="Tags" value="fishingbait,baitgrub,perkAT01,perkAT02,perkAT03"/>
+	<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="MapIcon" value="ui_game_symbol_GrubBaitIcon"/>
+	<property name="TrackerIcon" value="ui_game_symbol_GrubBaitIcon"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="Wander"/>
+	<property name="AITask-2" value="ApproachSpot"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="10"/>
+	<property name="DeadBodyHitPoints" value="1"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="SizeScale" value=".15"/>
+	
+	<property name="Buffs" value="buffNPCGrubStart"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial2" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial3" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/> 
+	
+	
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="6"/>
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_grub" />
+</entity_class>
+	<entity_class name="animalBaitGrasshopper" extends="animalTemplateHostile">
+	<property name="Tags" value="fishingbait,baitgrasshopper,perkAT01,perkAT02,perkAT03"/>
+	<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="MapIcon" value="ui_game_symbol_GrasshopperBaitIcon"/>
+	<property name="TrackerIcon" value="ui_game_symbol_GrasshopperBaitIcon"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="Wander"/>
+	<property name="AITask-2" value="ApproachSpot"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="10"/>
+	<property name="DeadBodyHitPoints" value="1"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="SizeScale" value=".15"/>
+	
+	<property name="Buffs" value="buffNPCGrasshopperStart"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial2" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial3" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/> 
+	
+	
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="6"/>
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_grasshopper" />
+</entity_class>
+	<entity_class name="animalBaitSnail" extends="animalTemplateHostile">
+	<property name="Tags" value="fishingbait,baitsnail,perkAT01,perkAT02,perkAT03"/>
+	<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="MapIcon" value="ui_game_symbol_SnailBaitIcon"/>
+	<property name="TrackerIcon" value="ui_game_symbol_SnailBaitIcon"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="Wander"/>
+	<property name="AITask-2" value="ApproachSpot"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="10"/>
+	<property name="DeadBodyHitPoints" value="1"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="SizeScale" value=".15"/>
+	
+	<property name="Buffs" value="buffNPCSnailStart"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial2" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial3" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/> 
+	
+	
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="6"/>
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_snail" />
+</entity_class>
+
+
+	<entity_class name="animalBaitDragonfly" extends="animalTemplateHostile">
+	<property name="Tags" value="fishingbait,baitdragonfly,perkAT03"/>
+	<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="MapIcon" value="ui_game_symbol_DragonflyBaitIcon"/>
+	<property name="TrackerIcon" value="ui_game_symbol_DragonflyBaitIcon"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="Wander"/>
+	<property name="AITask-2" value="ApproachSpot"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="10"/>
+	<property name="DeadBodyHitPoints" value="1"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="SizeScale" value=".35"/>
+	
+	<property name="Buffs" value="buffNPCDragonflyStart"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial2" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial3" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/> 
+	
+	
+	
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="6"/>
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_dragonfly" />
+</entity_class>
+	<entity_class name="animalBaitButterfly01" extends="animalTemplateHostile">
+	<property name="Tags" value="fishingbait,baitbutterfly,perkAT03"/>
+	<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="MapIcon" value="ui_game_symbol_ButterflyBaitIcon"/>
+	<property name="TrackerIcon" value="ui_game_symbol_ButterflyBaitIcon"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="Wander"/>
+	<property name="AITask-2" value="ApproachSpot"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="10"/>
+	<property name="DeadBodyHitPoints" value="1"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="SizeScale" value=".35"/>
+	
+	<property name="Buffs" value="buffNPCButterfly01Start"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial2" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial3" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/> 
+	
+	
+	
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="6"/>
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_butterfly" />
+</entity_class>
+	<entity_class name="animalBaitButterfly02" extends="animalTemplateHostile">
+	<property name="Tags" value="fishingbait,baitbutterfly,perkAT03"/>
+	<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="MapIcon" value="ui_game_symbol_ButterflyBaitIcon"/>
+	<property name="TrackerIcon" value="ui_game_symbol_ButterflyBaitIcon"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="Wander"/>
+	<property name="AITask-2" value="ApproachSpot"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="10"/>
+	<property name="DeadBodyHitPoints" value="1"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="SizeScale" value=".35"/>
+	
+	<property name="Buffs" value="buffNPCButterfly02Start"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial2" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial3" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/> 
+	
+	
+	
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="6"/>
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_butterfly" />
+</entity_class>
+	<entity_class name="animalBaitButterfly03" extends="animalTemplateHostile">
+	<property name="Tags" value="fishingbait,baitbutterfly,perkAT03"/>
+	<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="MapIcon" value="ui_game_symbol_ButterflyBaitIcon"/>
+	<property name="TrackerIcon" value="ui_game_symbol_ButterflyBaitIcon"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="Wander"/>
+	<property name="AITask-2" value="ApproachSpot"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="10"/>
+	<property name="DeadBodyHitPoints" value="1"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="SizeScale" value=".35"/>
+	
+	<property name="Buffs" value="buffNPCButterfly03Start"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial2" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/>
+	<property name="ReplaceMaterial3" value="#@modfolder:Resources/TelricsFishingV2A20.unity3d?MaterialInvisibleFishingA20"/> 
+	
+	
+	
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="6"/>
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_butterfly" />
+</entity_class>
+
+</append>
+</configs>

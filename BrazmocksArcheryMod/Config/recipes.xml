@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BrazmocksArcheryMod>
+
+<remove xpath="/recipes/recipe[@name='ammoArrowStone']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleArrowStone']"/>
+<remove xpath="/recipes/recipe[@name='ammoArrowIron']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleArrowIron']"/>
+<remove xpath="/recipes/recipe[@name='ammoArrowSteelAP']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']"/>
+<remove xpath="/recipes/recipe[@name='ammoArrowFlaming']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']"/>
+<remove xpath="/recipes/recipe[@name='ammoArrowExploding']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleArrowExploding']"/>
+<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']"/>
+<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']"/>
+<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']"/>
+<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']"/>
+<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']"/>
+<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']"/>
+
+
+<append xpath="/recipes">
+
+<!-- Brazmock Bows -->
+
+<recipe name="gunBowFletcher" count="1" tags="learnable,PerkArchery">
+	<ingredient name="resourceWood" count="15"/>
+	<ingredient name="resourceYuccaFibers" count="5"/>
+	<ingredient name="resourceScrapIron" count="50"/>
+		<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceScrapIron,resourceYuccaFibers,resourceWood"/>
+	</effect_group>
+</recipe>
+
+<recipe name="gunBowRecurve" count="1" craft_time="25" craft_area="workbench" tags="learnable,PerkArchery">
+	<ingredient name="gunBowT1WoodenBowParts" count="4"/>
+	<ingredient name="resourceWood" count="40"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourceAluminium" count="50"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunBowT1WoodenBowParts,resourceWood,resourceLeather,resourceAluminium,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+
+<recipe name="gunBowHybridCamCompound" count="1" craft_area="workbench" tags="learnable,PerkArchery">
+	<ingredient name="gunBowT3HighPoweredCompoundParts" count="5"/>
+	<ingredient name="modGunBowPolymerString" count="1"/>
+	<ingredient name="resourceCarbonFiber" count="10"/>
+	<ingredient name="resourceForgedCarbonSteel" count="6"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunBowT3HighPoweredCompoundParts,resourceCarbonFiber,resourceCarbonSteel,resourceMechanicalParts"/>
+	</effect_group>
+</recipe>
+
+<!-- Brazmock Crossbows -->
+
+<recipe name="gunBowPrimitiveCrossbow" count="1" tags="PerkArchery">
+	<ingredient name="resourceGlue" count="2"/>
+	<ingredient name="resourceScrapIron" count="60"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceWood" count="50"/>
+</recipe>
+
+<recipe name="gunBowRecurveCrossbow" count="1" craft_time="170" craft_area="workbench" tags="learnable,perkArchery">
+	<ingredient name="gunBowT1WoodenBowParts" count="4"/>
+	<ingredient name="resourceAluminium" count="50"/>
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceWood" count="40"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunBowT1WoodenBowParts,resourceAluminium,resourceDuctTape,resourceLeather,resourceWood"/>
+	</effect_group>
+</recipe>
+
+<recipe name="gunBowHybridCamCompoundCrossbow" count="1" craft_area="workbench" tags="learnable,perkArchery">
+	<ingredient name="gunBowT3HighPoweredCompoundParts" count="5"/>
+	<ingredient name="resourceForgedCarbonSteel" count="15"/>
+	<ingredient name="modGunBowPolymerString" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceCarbonFiber" count="20"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunBowT3HighPoweredCompoundParts,resourceForgedCarbonSteel,resourceDuctTape,resourceCarbonFiber,resourceSpring"/>
+	</effect_group>
+</recipe>
+
+<!-- Arrows -->
+
+<!-- Vanity Arrows -->
+<recipe name="ammoArrowShock" count="1" craft_area="workbench" craft_time="6">
+	<ingredient name="resourceArrowHeadShock" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+    <ingredient name="resourceFeather" count="1"/>	
+</recipe>
+
+<recipe name="ammoArrowStun" count="1" craft_area="workbench" craft_time="3">
+    <ingredient name="resourceFeather" count="2"/>
+    <ingredient name="resourceArrowHeadStun" count="1"/>
+    <ingredient name="resourceWood" count="2"/>
+	<ingredient name="resourceWoodShaft" count="1"/>
+</recipe>
+
+<recipe name="ammoArrowFlaming" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceCloth" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleArrowFlaming" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+	<ingredient name="resourceScrapPolymers" count="160"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceCloth" count="80"/>
+	<ingredient name="resourceAnimalFat" count="80"/>
+</recipe>
+
+<recipe name="ammoArrowExploding" count="1" craft_area="workbench" craft_time="12" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceGunPowder" count="6"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleArrowExploding" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="60"/>
+	<ingredient name="resourceScrapPolymers" count="120"/>
+	<ingredient name="resourceGunPowder" count="360"/>
+	<ingredient name="resourceDuctTape" count="60"/>
+</recipe>
+
+<!-- Wood Arrows -->
+
+<recipe name="ammoArrowStone" count="1" craft_time="2" tags="PerkArchery">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceWoodShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoArrowStone" count="1" craft_area="workbench" craft_time="2" tags="PerkArchery">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceWoodShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleArrowStone" count="1" craft_time="240" tags="learnable">
+	<ingredient name="resourceRockSmall" count="80"/>
+	<ingredient name="resourceWoodShaft" count="80"/>
+	<ingredient name="resourceFeather" count="80"/>
+</recipe>
+
+<recipe name="ammoBundleArrowStone" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+	<ingredient name="resourceRockSmall" count="80"/>
+	<ingredient name="resourceWoodShaft" count="80"/>
+	<ingredient name="resourceFeather" count="80"/>
+</recipe>
+
+<recipe name="ammoArrowIron" count="1" craft_time="2" tags="PerkArchery">
+	<ingredient name="resourceArrowHeadIron" count="1"/>
+	<ingredient name="resourceWoodShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoArrowIron" count="1" craft_area="workbench" craft_time="2" tags="PerkArchery">
+	<ingredient name="resourceArrowHeadIron" count="1"/>
+	<ingredient name="resourceWoodShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleArrowIron" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+	<ingredient name="resourceArrowHeadIron" count="80"/>
+	<ingredient name="resourceWoodShaft" count="80"/>
+	<ingredient name="resourceFeather" count="80"/>
+</recipe>
+
+<recipe name="ammoArrowSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceWoodShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="ammoBundleArrowSteelAP" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+	<ingredient name="resourceWoodShaft" count="80"/>
+	<ingredient name="resourceScrapPolymers" count="160"/>
+</recipe>
+
+<recipe name="ammoArrowCarbonSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadCarbonAP" count="1"/>
+	<ingredient name="resourceWoodShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<!-- Aluminium Arrows -->
+
+<recipe name="ammoArrowAluminiumStone" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceAluminiumShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoArrowAluminiumIron" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceArrowHeadIron" count="1"/>
+	<ingredient name="resourceAluminiumShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoArrowAluminiumSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,PerkArchery">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceAluminiumShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="ammoArrowAluminiumCarbonSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,PerkArchery">
+	<ingredient name="resourceArrowHeadCarbonAP" count="1"/>
+	<ingredient name="resourceAluminiumShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<!-- Carbon Fiber Arrows -->
+
+<recipe name="ammoArrowFiberStone" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceCarbonFiberShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoArrowFiberIron" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceArrowHeadIron" count="1"/>
+	<ingredient name="resourceCarbonFiberShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoArrowFiberSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,PerkArchery">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceCarbonFiberShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="ammoArrowFiberCarbonSteelAP" count="1" craft_area="workbench" tags="learnable,PerkArchery">
+	<ingredient name="resourceArrowHeadCarbonAP" count="1"/>
+	<ingredient name="resourceCarbonFiberShaft" count="1"/>
+    <ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<!-- Crossbow Bolts --> 
+
+<!-- Vanity Bolts -->
+
+<recipe name="ammoCrossbowBoltFlaming" count="1" craft_time="14" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceCloth" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+	<ingredient name="resourceScrapPolymers" count="160"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceCloth" count="80"/>
+	<ingredient name="resourceAnimalFat" count="80"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltExploding" count="1" craft_area="workbench" craft_time="14" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceGunPowder" count="8"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleCrossbowBoltExploding" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="60"/>
+	<ingredient name="resourceScrapPolymers" count="120"/>
+	<ingredient name="resourceGunPowder" count="480"/>
+	<ingredient name="resourceDuctTape" count="60"/>
+</recipe>
+
+<!-- Wooden Bolts -->
+
+<recipe name="ammoCrossbowBoltStone" count="1" craft_time="2">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceWoodBoltShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltStone" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceWoodBoltShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="240" tags="learnable">
+	<ingredient name="resourceRockSmall" count="80"/>
+	<ingredient name="resourceWoodBoltShaft" count="80"/>
+	<ingredient name="resourceFeather" count="80"/>
+</recipe>
+
+<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+	<ingredient name="resourceRockSmall" count="80"/>
+	<ingredient name="resourceWoodBoltShaft" count="80"/>
+	<ingredient name="resourceFeather" count="80"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltIron" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceBoltHeadIron" count="1"/>
+	<ingredient name="resourceWoodBoltShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleCrossbowBoltIron" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+	<ingredient name="resourceBoltHeadIron" count="80"/>
+	<ingredient name="resourceWoodBoltShaft" count="80"/>
+	<ingredient name="resourceFeather" count="80"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBoltHeadSteelAP" count="1"/>
+	<ingredient name="resourceWoodBoltShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltCarbonSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBoltHeadCarbonAP" count="1"/>
+	<ingredient name="resourceWoodBoltShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<!-- Aluminium Bolts -->
+
+<recipe name="ammoCrossbowBoltAluminiumStone" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceAluminiumBoltShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltAluminiumIron" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceBoltHeadIron" count="1"/>
+	<ingredient name="resourceAluminiumBoltShaft" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltAluminiumSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBoltHeadSteelAP" count="1"/>
+	<ingredient name="resourceAluminiumBoltShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltAluminiumCarbonSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBoltHeadCarbonAP" count="1"/>
+	<ingredient name="resourceAluminiumBoltShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<!-- Carbon Fiber Bolts -->
+
+<recipe name="ammoCrossbowBoltFiberStone" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceCarbonFiberBoltShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltFiberIron" count="1" craft_area="workbench" craft_time="2">
+	<ingredient name="resourceBoltHeadIron" count="1"/>
+	<ingredient name="resourceCarbonFiberBoltShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltFiberSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBoltHeadSteelAP" count="1"/>
+	<ingredient name="resourceCarbonFiberBoltShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltFiberCarbonSteelAP" count="1" craft_area="workbench" craft_time="2" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBoltHeadCarbonAP" count="1"/>
+	<ingredient name="resourceCarbonFiberBoltShaft" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<!-- Bow Parts -->
+
+<recipe name="gunBowT1WoodenBowParts" count="1" craft_time="15" craft_area="workbench" tags="learnable,PerkArchery">
+    <ingredient name="resourceForgedIron" count="5"/>
+    <ingredient name="resourceScrapIron" count="15"/>
+</recipe>
+
+<recipe name="gunBowT3HighPoweredCompoundParts" count="1" craft_time="20" craft_area="workbench" tags="learnable,PerkArchery">
+    <ingredient name="gunBowT1WoodenBowParts" count="1"/>
+    <ingredient name="resourceSpring" count="2"/>
+</recipe>
+
+<!-- Arrow Shafts -->
+
+<recipe name="resourceWoodShaft" count="1" craft_time="1">
+        <ingredient name="resourceWood" count="1"/>
+</recipe>
+
+<recipe name="resourceWoodShaft" count="1" craft_area="workbench" craft_time="1">
+        <ingredient name="resourceWood" count="1"/>
+</recipe>
+
+<recipe name="resourceAluminiumShaft" count="1" craft_area="workbench" craft_time="2">
+        <ingredient name="resourceAluminium" count="1"/>
+</recipe>
+
+<recipe name="resourceCarbonFiberShaft" count="1" craft_area="workbench" craft_time="2">
+        <ingredient name="resourceCarbonFiber" count="1"/>
+</recipe>
+
+<!-- Bolt Shafts -->
+
+<recipe name="resourceWoodBoltShaft" count="1" craft_time="1">
+        <ingredient name="resourceWood" count="1"/>
+</recipe>
+
+<recipe name="resourceWoodBoltShaft" count="1" craft_area="workbench" craft_time="1">
+        <ingredient name="resourceWood" count="1"/>
+</recipe>
+
+<recipe name="resourceAluminiumBoltShaft" count="1" craft_area="workbench" craft_time="2">
+        <ingredient name="resourceAluminium" count="1"/>
+</recipe>
+
+<recipe name="resourceCarbonFiberBoltShaft" count="1" craft_area="workbench" craft_time="2">
+        <ingredient name="resourceCarbonFiber" count="1"/>
+</recipe>
+
+<!-- Resources -->
+
+<recipe name="resourceFeather" count="1" craft_time="2">
+    <ingredient name="resourceYuccaFibers" count="4"/>
+</recipe>
+
+<recipe name="resourceFeather" count="1" craft_time="2" craft_area="workbench">
+    <ingredient name="resourceYuccaFibers" count="2"/>
+</recipe>
+
+<recipe name="resourceAluminium" count="1" material_based="true" craft_time="2" craft_area="forge">
+	<ingredient name="unit_iron" count="1"/>
+	<ingredient name="unit_lead" count="1"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="resourceCarbonFiber" count="5" craft_area="chemistryStation" tags="PerkArchery">
+	<ingredient name="resourceScrapPolymers" count="1"/>
+	<ingredient name="resourceYuccaFibers" count="2"/>
+	<ingredient name="resourceCloth" count="1"/>
+	<ingredient name="resourceResin" count="1"/>
+</recipe>
+
+<recipe name="resourceForgedCarbonSteel" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+	<ingredient name="unit_iron" count="30"/>
+	<ingredient name="unit_clay" count="15"/>
+</recipe>
+
+<recipe name="resourceResin" count="1" craft_area="chemistryStation">
+    <ingredient name="resourceAcid" count="1" />
+    <ingredient name="resourceScrapPolymers" count="2" />
+</recipe>
+
+<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
+    <ingredient name="resourcePotassiumNitratePowder" count="5" />
+    <ingredient name="resourceCoal" count="5" />
+    <ingredient name="drinkJarRiverWater" count="1" />
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="10" craft_area="chemistryStation">
+    <ingredient name="resourceAcid" count="1" />
+    <ingredient name="resourceCloth" count="1" />
+    <ingredient name="resourceYuccaFibers" count="1" />
+</recipe>
+
+<!-- Arrowheads -->
+
+<recipe name="resourceArrowHeadShock" count="1" craft_area="workbench">
+	<ingredient name="resourceElectricParts" count="1"/>
+	<ingredient name="resourceForgedSteel" count="1"/>
+</recipe>
+
+<recipe name="resourceArrowHeadStun" count="1" craft_time="2">
+    <ingredient name="resourceRockSmall" count="8"/>
+    <ingredient name="resourceCloth" count="2"/>
+</recipe>
+
+<recipe name="resourceArrowHeadCarbonAP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="PerkArchery" craft_time="3">
+	<ingredient name="unit_iron" count="8"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<!-- Boltheads -->
+
+<recipe name="resourceBoltHeadIron" count="1" material_based="true" craft_area="forge" tags="PerkArchery" craft_time="3">
+	<ingredient name="unit_iron" count="2"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="resourceBoltHeadSteelAP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="PerkArchery" craft_time="3">
+	<ingredient name="unit_iron" count="5"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="resourceBoltHeadCarbonAP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="PerkArchery" craft_time="3">
+	<ingredient name="unit_iron" count="8"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<!-- Modifications -->
+
+<recipe name="modGunBowMiniLegolasMagExtender" count="1" craft_area="workbench" tags="learnable,PerkArchery">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceGlue" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceScrapIron" count="100"/>
+</recipe>
+
+<recipe name="modGunBowLegolasMagExtender" count="1" craft_area="workbench" tags="learnable,PerkArchery">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceOil" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+</recipe>
+
+
+</append>
+
+</BrazmocksArcheryMod>

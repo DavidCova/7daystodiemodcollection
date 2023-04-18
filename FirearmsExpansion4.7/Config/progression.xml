@@ -1,0 +1,34 @@
+<FirearmsExpansion4>
+
+<append xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group"><passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="Railgun"/></append>
+<remove xpath="/progression/perks/perk[@name='perkAutoWeaponsDrumMag']"/>
+<remove xpath="/progression/perks/perk[@name='perkAutoWeaponsMachineGuns']"/>
+<remove xpath="/progression/perks/perk[@name='perkAutoWeaponsComplete']"/>
+
+<insertafter xpath="/progression/perks/perk[@name='perkAutoWeaponsMaintenance']">
+	<perk name="perkAutoWeaponsHPAmmo" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" name_key="bookAutoWeaponsHPammo" desc_key="perkAutoWeaponsHPAmmoDesc" long_desc_key="perkAutoWeaponsHPAmmoLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo556HP"/>
+		</effect_group>
+	</perk>
+</insertafter>
+
+<insertafter xpath="/progression/perks/perk[@name='perkAutoWeaponsRagdoll']">
+	<perk name="perkAutoWeaponsAPAmmo" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" name_key="bookAutoWeaponsAPammo" desc_key="perkAutoWeaponsAPAmmoDesc" long_desc_key="perkAutoWeaponsAPAmmoLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo556AP"/>
+		</effect_group>
+	</perk>
+	<perk name="perkAutoWeaponsComplete" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsCompleteDesc" long_desc_key="perkAutoWeaponsCompleteLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle556BulletBall,ammoBundle556AP,ammoBundle556HP"/>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffAutoWeaponsComplete">
+				<requirement name="ItemHasTags" tags="perkBookAutoWeapons"/>
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsComplete" operation="Equals" value="1"/>
+			</triggered_effect>
+		</effect_group>
+	</perk>
+</insertafter>
+
+
+</FirearmsExpansion4>

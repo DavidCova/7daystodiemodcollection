@@ -1,0 +1,30 @@
+<PlaebadLeverAction44>
+
+	<!-- Modify lever action rifle to use 44 ammo -->
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP</set>
+	<!-- Add custom tag to the Lever Action Rifle to enable certain Magnum Enforcer perks -->
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifle44</set>
+	<!-- Update item packs for level action rifle to include 44 ammo instead of 7.62 -->
+	<set xpath="/items/item[@name='LoadoutTier3Rifle']/property[@class='Action0']/property[@name='Create_item']/@value">ammo44MagnumBulletBall,gunRifleT2LeverActionRifle</set>
+	<set xpath="/items/item[@name='LoadoutTier4Rifle01']/property[@class='Action0']/property[@name='Create_item']/@value">ammo44MagnumBulletBall,gunRifleT2LeverActionRifle</set>
+	<set xpath="/items/item[@name='LoadoutTier5Rifle01']/property[@class='Action0']/property[@name='Create_item']/@value">ammo44MagnumBulletBall,gunRifleT2LeverActionRifle</set>
+	<set xpath="/items/item[@name='questRewardT2RifleBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT2LeverActionRifle,ammo44MagnumBulletBall</set>
+	<!-- Add Ranged tag to 44 ammo to properly apply dmg to the Lever Action Rifle-->
+	<set xpath="/items/item[@name='ammo44MagnumBulletBall']/effect_group[@name='ammo44MagnumBulletBall']/passive_effect[@name='EntityDamage']/@tags">perkGunslinger,revolver,ranged</set>
+	<set xpath="/items/item[@name='ammo44MagnumBulletHP']/effect_group[@name='ammo44MagnumBulletHP']/passive_effect[@name='EntityDamage']/@tags">perkGunslinger,revolver,ranged</set>
+	<set xpath="/items/item[@name='ammo44MagnumBulletAP']/effect_group[@name='ammo44MagnumBulletAP']/passive_effect[@name='EntityDamage']/@tags">perkGunslinger,revolver,ranged</set>
+	<!-- Adjust weapon damage to make it consistent with 44 handguns so it is not OP -->
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='EntityDamage' and @operation='base_add']/@value">-2</set>
+	<!-- Add Magnum Enforcer series completion bonus (penetration) for Lever Action 44-->
+	<insertAfter xpath="/items/item[@name='ammo44MagnumBulletBall']/effect_group[@name='ammo44MagnumBulletBall']/passive_effect[@name='EntityPenetrationCount']">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="rifle44">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+		</passive_effect>
+    </insertAfter>
+	<insertAfter xpath="/items/item[@name='ammo44MagnumBulletHP']/effect_group[@name='ammo44MagnumBulletHP']/passive_effect[@name='EntityPenetrationCount']">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="rifle44">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+		</passive_effect>
+    </insertAfter>
+
+</PlaebadLeverAction44>
