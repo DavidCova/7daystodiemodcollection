@@ -1,5 +1,0 @@
-<configs>
-<append xpath="/spawning/biome[@name='pine_forest']">
-		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="FishingBait" notags="commercial,industrial,downtown" />
-</append>
-</configs>

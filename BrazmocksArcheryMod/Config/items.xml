@@ -1040,7 +1040,7 @@
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="0.0,.2" tags="perkArchery"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".15,.55" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
-		<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="head"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="5" tags="head"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random BlockDmg -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 		<passive_effect name="ProjectileVelocity" operation="perc_add" value="0.00,.15" tags="perkArchery"/> <!-- random Veloc -->
