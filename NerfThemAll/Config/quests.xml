@@ -1,26 +1,4 @@
 <configs>
-<!-- Find the Trader without the starter quest -->
-<remove xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@id='quest_whiteRiverCitizen1']" />
-<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
-<!-- The Trader cannot show you the way to the next trader  -->
-<remove xpath="/quests/quest[@id='tier2_nexttrader']" />
-<remove xpath="/quests/quest[@id='tier3_nexttrader']" />
-<remove xpath="/quests/quest[@id='tier4_nexttrader']" />
-<remove xpath="/quests/quest[@id='tier5_nexttrader']" />
-
-<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier2_nexttrader']" />
-<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier3_nexttrader']" />
-<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier4_nexttrader']" />
-<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier5_nexttrader']" />
-
-<!--Tier 1 Quest Reward - Removing Bicycle, Wrench, Forge, etc -->
-<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestBicycle']" />
-<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestWrench']" />
-<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestForge']" />
-<!-- Tier 1 Quest reward - Adding Bicycle parts   -->
-<append xpath="/quests/quest[@id='quest_tier1complete']">
-<reward type="LootItem" id="groupQuestBicycleParts" ischosen="true" value="2"/>
-</append>
 <!-- Tier 2 Quest reward - Removing Workbench -->
 <remove xpath="/quests/quest[@id='quest_tier2complete']/reward[@id='groupQuestWorkbench']" />
 <!-- Tier 3 Quest reward - Removing DartTrap,GeneratorBank,Chemistrystation etc  -->
